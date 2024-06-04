@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section className="relative">
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6" data-aos="zoom-y-out" data-aos-delay="150">
         <div className="py-12 md:py-20">
 
           {/* Section header */}

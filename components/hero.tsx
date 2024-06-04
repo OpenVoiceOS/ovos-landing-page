@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
+import React from 'react'
 
 export default function Hero() {
   return (

@@ -7,6 +7,7 @@ import Hero from '@/components/hero'
 import Features from '@/components/features'
 import Gettingstarted from '@/components/gettingstarted'
 import About from '@/components/about'
+import Getonpi from '@/components/getonpi'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <About />
       <Features />
       <Gettingstarted />
+      <Getonpi />
     </>
   )
 }
