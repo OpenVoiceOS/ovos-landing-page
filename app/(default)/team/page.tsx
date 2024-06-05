@@ -1,12 +1,16 @@
 export const metadata = {
-    title: 'Sample',
-    description: 'Sample',
+    title: 'Team',
+    description: 'Meet the team behind OpenVoiceOS.'
 }
 
-    export default function Teams() {
+import Teams from '@/components/teams'
+import Halloffame from '@/components/halloffame'
+
+    export default function Team() {
     return (
         <>
-            <h1>404</h1> 
+        <Teams />
+        <Halloffame />
         </>
     )
 }
