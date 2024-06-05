@@ -28,7 +28,7 @@ const Halloffame: React.FC = () => {
                     <div key={index} className="text-center text-gray-500 dark:text-gray-400">
                         <img className="mx-auto mb-4 w-36 h-36 rounded-full" src={member.image} alt={`${member.name} Avatar`} />
                         <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            <a href="#">{member.name}</a>
+                            <p>{member.name}</p>
                         </h3>
                         <p>{member.role}</p>
                     </div>
