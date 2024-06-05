@@ -1,12 +1,14 @@
 export const metadata = {
-    title: 'Sample',
-    description: 'Sample',
+    title: 'Downloads',
+    description: 'Download latest stable and testing builds of OpenVoiceOS for Raspberry PI 4 and x86-64 devices.',
 }
+
+import DownloadPage from '@/components/downloads'
 
     export default function Downloads() {
     return (
         <>
-            <h1>404</h1> 
+        <DownloadPage />
         </>
     )
 }
