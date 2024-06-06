@@ -46,7 +46,7 @@ const Halloffame: React.FC = () => {
                         <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900">
                             <p>{member.name}</p>
                         </h3>
-                        <Link href={`https://github.com/${member.handle}`} >{member.handle}</Link>
+                        <Link href={`https://github.com/${member.handle}`} >@{member.handle}</Link>
                     </div>
                 ))}
             </div>

@@ -22,10 +22,7 @@ export default function Gettingstarted() {
 
   return (
     <section className="relative">
-
-      {/* Section background */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-
+      
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
@@ -42,7 +39,7 @@ export default function Gettingstarted() {
               <div className="mb-8 md:mb-0">
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
+                  href="#"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
@@ -51,8 +48,8 @@ export default function Gettingstarted() {
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  href="#"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>

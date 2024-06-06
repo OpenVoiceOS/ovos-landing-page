@@ -12,7 +12,7 @@ export default function Getonpi() {
             <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className='flex justify-center items-center' data-aos="zoom-y-out">
-                  <Image src={Mycroft} alt='Mycroft Mark II' />
+                  <Image src={Mycroft} alt='Mycroft Mark II' height={350} width={350} />
                 </div>
                 <div>
                   <h1 className="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Own a Raspberry Pi or Mycroft Device ?</h1>

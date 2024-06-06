@@ -5,7 +5,7 @@ import core3 from '@/public/images/core3.jpeg';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faCommentAlt, faCommentDots } from '@fortawesome/free-solid-svg-icons';
+import { faCommentAlt, faCommentDots, faLocation, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
 
 export default function Teams() {
   return (
@@ -22,7 +22,7 @@ export default function Teams() {
                 src={core2} alt="core" width="640" height="805" />
               <div>
                 <h4 className="text-2xl font-bold">Daniel McKnight</h4>
-                <span className="block text-sm text-gray-500">Code Wrangler / Maintainer OVOS Core</span>
+                <span className="block text-sm text-gray-500"><FontAwesomeIcon icon={faLocationArrow} /> United States 🇺🇸</span>
               </div>
               <div className="flex justify-center space-x-4">
                 <a href="https://www.linkedin.com/in/daniel-mcknight" target="_blank" rel="noopener noreferrer">
@@ -32,7 +32,7 @@ export default function Teams() {
                   <FontAwesomeIcon icon={faCommentAlt} className="text-green-600 text-xl" />
                 </a>
                 <a href="https://github.com/NeonDaniel" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="text-green-600 text-xl" />
+                  <FontAwesomeIcon icon={faGithub} className="text-xl" />
                 </a>
               </div>
             </div>
@@ -41,7 +41,7 @@ export default function Teams() {
               src={core1} alt="man" loading="lazy" width="1000" height="667" />
               <div>
                 <h4 className="text-2xl font-bold">Casimiro Ferreira</h4>
-                <span className="block text-sm text-gray-500">Code Wrangler / Maintainer OVOS Core</span>
+                <span className="block text-sm text-gray-500"><FontAwesomeIcon icon={faLocationArrow} /> Portugal 🇵🇹 </span>
               </div>
               <div className="flex justify-center space-x-4">
                 <a href="https://www.linkedin.com/in/casimiro-ferreira" target="_blank" rel="noopener noreferrer">
@@ -51,7 +51,7 @@ export default function Teams() {
                   <FontAwesomeIcon icon={faCommentAlt} className="text-green-600 text-xl" />
                 </a>
                 <a href="https://github.com/JarbasAl" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="text-green-600 text-xl" />
+                  <FontAwesomeIcon icon={faGithub} className="text-xl" />
                 </a>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function Teams() {
               src={core3} alt="woman" loading="lazy" width="1000" height="667" />
               <div>
                 <h4 className="text-2xl font-bold">Peter Steenbergen</h4>
-                <span className="block text-sm text-gray-500">Hardware Hacker / Maintainer OVOS Images</span>
+                <span className="block text-sm text-gray-500"><FontAwesomeIcon icon={faLocationArrow} /> Netherlands 🇳🇱 </span>
               </div>
               <div className="flex justify-center space-x-4">
                 <a href="https://www.linkedin.com/in/peter-steenbergen" target="_blank" rel="noopener noreferrer">
@@ -70,7 +70,7 @@ export default function Teams() {
                   <FontAwesomeIcon icon={faCommentAlt} className="text-green-600 text-xl" />
                 </a>
                 <a href="https://github.com/j1nx" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="text-green-600 text-xl" />
+                  <FontAwesomeIcon icon={faGithub} className="text-xl" />
                 </a>
               </div>
             </div>

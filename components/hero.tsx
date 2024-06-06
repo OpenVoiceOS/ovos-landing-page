@@ -11,7 +11,7 @@ export default function Hero() {
             <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h1 className="text-6xl md:text-5xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Open Voice OS</h1>
+                  <h1 className="text-5xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Open Voice OS</h1>
                   <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">OpenVoiceOS is a community-driven, open-source voice AI platform for creating custom voice-controlled ​interfaces across devices with NLP, a customizable UI, and a focus on privacy and security.</p>
                 </div>
 

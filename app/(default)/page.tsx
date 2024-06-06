@@ -8,6 +8,7 @@ import Features from '@/components/features'
 import Gettingstarted from '@/components/gettingstarted'
 import About from '@/components/about'
 import Getonpi from '@/components/getonpi'
+import ContactUs from '@/components/contact'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Features />
       <Gettingstarted />
       <Getonpi />
+      <ContactUs />
     </>
   )
 }
