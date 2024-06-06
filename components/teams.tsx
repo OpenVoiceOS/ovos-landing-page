@@ -9,7 +9,7 @@ import { faCommentDots } from '@fortawesome/free-solid-svg-icons'
 
 export default function Teams() {
   return (
-    <section className="relative">
+    <section className="relative" data-aos="zoom-y-out" data-aos-delay="150">
       <div className="py-20 bg-gray-50">
         <div className="container mx-auto px-6 md:px-12 xl:px-32">
           <div className="mb-16 text-center">

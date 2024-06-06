@@ -1,17 +1,33 @@
 import React from 'react';
+import Link from 'next/link';
 
 interface TeamMember {
     name: string;
-    role: string;
+    handle: string;
     image: string;
 }
 
 const teamMembers: TeamMember[] = [
     {
-        name: 'Jhon Doe',
-        role: 'CEO/Co-founder',
-        image: 'https://example.com/image.jpg',
+        name: 'Gaëtan Trellu',
+        handle: 'goldyfruit',
+        image: 'https://avatars.githubusercontent.com/u/614115',
     },
+    {
+        name: 'Mike',
+        handle: 'mikejgray',
+        image: 'https://avatars.githubusercontent.com/u/30268971',
+    },
+    {
+        name: 'Jeremy',
+        handle: 'builderjer',
+        image: 'https://avatars.githubusercontent.com/u/34875857',
+    },
+    {
+        name: 'Swen Gross',
+        handle: 'emphasize',
+        image: 'https://avatars.githubusercontent.com/u/25036977',
+    }
 ];
 
 const Halloffame: React.FC = () => {
@@ -30,7 +46,7 @@ const Halloffame: React.FC = () => {
                         <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             <p>{member.name}</p>
                         </h3>
-                        <p>{member.role}</p>
+                        <Link href="https://gihtub.com/{member.handle}">{member.handle}</Link>
                     </div>
                 ))}
             </div>
