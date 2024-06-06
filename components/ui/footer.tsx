@@ -16,28 +16,30 @@ export default function Footer() {
               </p>
             </div>
           </div>
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2 justify-self-start">
-            <h6 className="text-gray-800 font-medium mb-2">Quick Links</h6>
-            <ul className="text-sm">
-              <li className="mb-2">
-                <Link href="/" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Home</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blogs</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Team</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Documentation</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/" className="font-medium text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Discussion</Link>
-              </li>
-              <li className="mb-2">
-                <Link href="/downloads" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Downloads</Link>
-              </li>
-            </ul>
+          <div className="sm:col-span-12 lg:col-span-3 lg:col-start-10 sm:text-left lg:text-center flex sm:justify-start lg:justify-end">
+            <div className="w-full lg:w-auto">
+              <h6 className="text-gray-800 font-medium mb-2 sm:text-left lg:text-center">Quick Links</h6>
+              <ul className="text-sm sm:text-left lg:text-center">
+                <li className="mb-2">
+                  <Link href="/" aria-label="Home" className="footer-link">Home</Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="/blogs" aria-label="Blogs" className="footer-link">Blogs</Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="/team" aria-label="Team" className="footer-link">Team</Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="/documentation" aria-label="Documentation" className="footer-link">Documentation</Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="/discussion" aria-label="Discussion" className="footer-link font-medium">Discussion</Link>
+                </li>
+                <li className="mb-2">
+                  <Link href="/downloads" aria-label="Downloads" className="footer-link">Downloads</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
