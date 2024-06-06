@@ -31,7 +31,7 @@ export default function ContactUs() {
             <FontAwesomeIcon icon={faCommentAlt} className="mr-2" />
             Matrix
           </Link>
-          <Link href="mailto: support@openvoiceos.org" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center">
+          <Link href="mailto:dev@openvoiceos.org" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center">
             <FontAwesomeIcon icon={faAt} className="mr-2" />
             Email
           </Link>
