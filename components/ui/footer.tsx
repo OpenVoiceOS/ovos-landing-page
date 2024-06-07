@@ -1,31 +1,20 @@
-import Logo from './logo'
+import Link from 'next/link'
+import React from 'react';
 
 export default function Footer() {
   return (
-    <footer>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-
-        <div className="grid sm:grid-cols-12 gap-8 py-8 md:py-12 border-t border-gray-200">
-
-          <div className="sm:col-span-12 lg:col-span-3">
-            <div className="mb-2">
-              <Logo />
-            </div>
-            <div className="text-sm text-gray-600">
-              <p>OpenVoiceOS is a community-driven, open-source voice AI platform for  creating custom voice-controlled ​interfaces across devices with NLP, a  customizable UI, and a focus on privacy and security.</p>
-            </div>
-          </div>
-
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2 justify-self-end">
-            <h6 className="text-gray-800 font-medium mb-2">Quick Links</h6>
-            <ul className="text-sm">
-              <li className="mb-2">
-                <a href="/" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Home</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <footer className="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+  <div className="mx-auto max-w-screen-xl text-center">
+      <p className="my-6 text-gray-500 dark:text-gray-400">Mycroft® is a registered trademark of Mycroft AI, Inc. Raspberry Pi® is a trademark of the Raspberry Pi Foundation. All other product names, logos, and brands are property of their respective owners. Use of these names, logos, and brands does not imply endorsement. Any unauthorized use is strictly prohibited.</p>
+      <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
+          <li><Link href="/" className="mr-4 hover:underline md:mr-6 ">Home</Link></li>
+          <li><Link href="/downloads" className="mr-4 hover:underline md:mr-6 ">Downloads</Link></li>
+          <li><Link href="https://openvoiceos.github.io/ovos-technical-manual" className="mr-4 hover:underline md:mr-6 ">Documentation</Link></li>
+          <li><Link href="/team" className="mr-4 hover:underline md:mr-6 ">Teams</Link></li>
+          <li><Link href="#" className="mr-4 hover:underline md:mr-6 ">Blog</Link></li>
+      </ul>
+      <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <Link href="/" className="hover:underline">Open Voice OS</Link>. All Rights Reserved.</span>
+  </div>
+</footer>
   )
 }

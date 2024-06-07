@@ -5,6 +5,8 @@ import { Transition } from '@headlessui/react'
 import Image from 'next/image'
 import pythonLogo from '@/public/images/python.png'
 import dockerLogo from '@/public/images/docker.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faClipboard } from '@fortawesome/free-solid-svg-icons'
 
 export default function Gettingstarted() {
   
@@ -12,13 +14,22 @@ export default function Gettingstarted() {
 
   const tabs = useRef<HTMLDivElement>(null)
 
+  const [copied, setCopied] = useState(false);
+
   const heightFix = () => {
     if (tabs.current && tabs.current.parentElement) tabs.current.parentElement.style.height = `${tabs.current.clientHeight}px`
   }
-
   useEffect(() => {
     heightFix()
   }, []) 
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(
+      'sh -c "curl -s https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/main/installer.sh -o installer.sh && chmod +x installer.sh && sudo ./installer.sh && rm installer.sh"'
+    );
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // Reset the copied state after 2 seconds
+  };
 
   return (
     <section className="relative">
@@ -103,6 +114,25 @@ export default function Gettingstarted() {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="text-center">
+            <p className="text-xl text-gray-900 p-6">To get started simple copy paste the following command in your terminal</p>
+            <code className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
+              <span className="flex gap-4">
+                <span className="shrink-0 text-gray-500">$</span>
+                <span className="flex-1">
+                  <span>sh -c </span>
+                  <span className="text-blue-500">
+                    "curl -s https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/main/installer.sh -o installer.sh && chmod +x installer.sh && sudo ./installer.sh && rm installer.sh"
+                  </span>
+                </span>
+              </span>
+              <button onClick={handleCopy} className="text-gray-500 hover:text-white">
+                <FontAwesomeIcon icon={faClipboard} />
+                <span className="sr-only">Copy to clipboard</span>
+              </button>
+              {copied && <span className="ml-2 text-green-500">Copied!</span>}
+            </code>
           </div>
         </div>
       </div>

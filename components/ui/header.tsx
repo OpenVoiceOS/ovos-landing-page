@@ -42,7 +42,7 @@ export default function Header() {
                 <Link href="https://github.com/OpenVoiceOS/OpenVoiceOS/discussions" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Discussion</Link>
               </li>
               <li>
-                <Link href="https://openvoiceos.github.io/community-docs/" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Documentation</Link>
+                <Link href="https://openvoiceos.github.io/ovos-technical-manual" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Documentation</Link>
               </li>
               <li>
                 <Link href="/team" className="font-medium text-gray-600 hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Team</Link>

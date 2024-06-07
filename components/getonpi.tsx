@@ -15,8 +15,8 @@ export default function Getonpi() {
                   <Image src={Mycroft} alt='Mycroft Mark II' height={350} width={350} />
                 </div>
                 <div>
-                  <h1 className="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Own a Raspberry Pi or Mycroft Device ?</h1>
-                  <p className="text-lg text-gray-600 mb-8" data-aos="zoom-y-out">Our Buildroot Image is a stripped-down Linux OS designed to host the open-source voice assistant Mycroft A.I., catering specifically to embedded systems, low-spec headless devices, and small touch-friendly screens.</p>
+                  <h1 className="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Own a Raspberry Pi or Mycroft® Device ?</h1>
+                  <p className="text-lg text-gray-600 mb-8" data-aos="zoom-y-out">Our Prebuild Image is a stripped-down Linux OS designed to host the open-source voice assistant Open Voice OS, catering specifically to embedded systems, low-spec headless devices, and small touch-friendly screens.</p>
                   <div className="flex justify-center">
                     <Link href="/downloads" className="bg-black text-white font-bold py-2 px-4 rounded">
                       Download Now
