@@ -68,16 +68,16 @@ export default function MobileMenu() {
               <Link href="/downloads" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Downloads</Link>
             </li>
             <li>
-              <Link href="#" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Documentation</Link>
+              <Link href="https://openvoiceos.github.io/ovos-technical-manual" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Documentation</Link>
             </li>
             <li>
-              <Link href="/discussion" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Discussion</Link>
+              <Link href="https://github.com/OpenVoiceOS/OpenVoiceOS/discussions" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Discussion</Link>
             </li>
             <li>
               <Link href="/team" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Team</Link>
             </li>
             <li>
-              <Link href="/blogs" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Blogs</Link>
+              <Link href="/blog" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Blogs</Link>
             </li>
             <li>
               <Link href="/" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 w-full my-2" onClick={() => setMobileNavOpen(false)}>

@@ -5,6 +5,7 @@ interface TeamMember {
     name: string;
     handle: string;
     image: string;
+    country?: string;
 }
 
 const teamMembers: TeamMember[] = [
@@ -12,21 +13,25 @@ const teamMembers: TeamMember[] = [
         name: 'Gaëtan Trellu',
         handle: 'goldyfruit',
         image: 'https://avatars.githubusercontent.com/u/614115',
+        country: 'Canada 🇨🇦',
     },
     {
         name: 'Mike Gray',
         handle: 'mikejgray',
         image: 'https://avatars.githubusercontent.com/u/30268971',
+        country: 'USA 🇺🇸',
     },
     {
         name: 'Jeremy Brodie',
         handle: 'builderjer',
         image: 'https://avatars.githubusercontent.com/u/34875857',
+        country: 'USA 🇺🇸',
     },
     {
         name: 'Swen Gross',
         handle: 'emphasize',
         image: 'https://avatars.githubusercontent.com/u/25036977',
+        country: 'Germany 🇩🇪',
     }
 ];
 
@@ -45,6 +50,7 @@ const Halloffame: React.FC = () => {
                         <img className="mx-auto mb-4 w-36 h-36 rounded-full" src={member.image} alt={`${member.name} Avatar`} />
                         <h3 className="mb-1 text-2xl font-bold tracking-tight text-gray-900">
                             <p>{member.name}</p>
+                            {member.country && <span className="text-sm text-gray-600 font-normal">{member.country}</span>}
                         </h3>
                         <Link href={`https://github.com/${member.handle}`} >@{member.handle}</Link>
                     </div>
