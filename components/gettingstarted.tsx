@@ -33,13 +33,10 @@ export default function Gettingstarted() {
 
   return (
     <section className="relative">
-      
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
-
           {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
-
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
@@ -69,8 +66,7 @@ export default function Gettingstarted() {
                   </div>
                 </a>
               </div>
-            </div>
-
+            </div>            
             {/* Tabs items */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
               <div className="transition-all">
@@ -117,12 +113,12 @@ export default function Gettingstarted() {
           </div>
           <div className="text-center">
             <p className="text-xl text-gray-900 p-6">To get started simple copy paste the following command in your terminal</p>
-            <code className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-800 text-white rounded-lg p-4 pl-6">
+            <code className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-black text-white rounded-lg p-4 pl-6">
               <span className="flex gap-4">
                 <span className="shrink-0 text-gray-500">$</span>
                 <span className="flex-1">
                   <span>sh -c </span>
-                  <span className="text-blue-500">
+                  <span className="text-gray-400">
                     "curl -s https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/main/installer.sh -o installer.sh && chmod +x installer.sh && sudo ./installer.sh && rm installer.sh"
                   </span>
                 </span>
