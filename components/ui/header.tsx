@@ -1,12 +1,14 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Logo from './logo'
 import MobileMenu from './mobile-menu'
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true)
+  const pathname = usePathname()
 
   // Detect whether the user has scrolled the page down by 10px
   const scrollHandler = () => {
@@ -34,23 +36,35 @@ export default function Header() {
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
               <li>
-                <Link href="/downloads" className="font-medium text-gray-600 hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out">Downloads</Link>
+                <Link href="/downloads">
+                  <p className={`font-medium ${pathname === '/downloads' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Downloads</p>
+                </Link>
               </li>
               <li>
-                <Link href="https://github.com/OpenVoiceOS/OpenVoiceOS/discussions" className="font-medium text-gray-600 hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out">Discussion</Link>
+                <Link href="https://github.com/OpenVoiceOS/OpenVoiceOS/discussions">
+                  <p className={`font-medium ${pathname === '/discussion' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Discussion</p>
+                </Link>
               </li>
               <li>
-                <Link href="https://openvoiceos.github.io/ovos-technical-manual" className="font-medium text-gray-600 dark:hover:text-white hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out">Documentation</Link>
+                <Link href="https://openvoiceos.github.io/ovos-technical-manual">
+                  <p className={`font-medium ${pathname === '/documentation' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} dark:hover:text-white hover:text-gray-900 px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Documentation</p>
+                </Link>
               </li>
               <li>
-                <Link href="/team" className="font-medium text-gray-600 hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out">Team</Link>
+                <Link href="/team">
+                  <p className={`font-medium ${pathname === '/team' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Team</p>
+                </Link>
               </li>
               <li>
-                <Link href="#" className="font-medium text-gray-600 hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out">Blogs</Link>
+                <Link href="#">
+                  <p className={`font-medium ${pathname === '/blogs' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Blogs</p>
+                </Link>
               </li>
               <li>
-                <Link href="/" className="btn-sm text-gray-200 bg-black hover:bg-gray-900 dark:hover:text-white ml-3">
-                  <span>Home</span>
+                <Link href="/">
+                  <p className={`btn-sm ${pathname === '/' ? 'text-white bg-black' : 'text-gray-200 bg-black'} hover:bg-gray-900 dark:hover:text-white ml-3`}>
+                    <span>Home</span>
+                  </p>
                 </Link>
               </li>
             </ul>
