@@ -10,7 +10,7 @@ import { faCommentAlt, faLocationArrow } from '@fortawesome/free-solid-svg-icons
 export default function Teams() {
   return (
     <section className="relative" data-aos="zoom-y-out" data-aos-delay="150">
-      <div className="py-20 bg-gray-50 dark:bg-gray-900">
+      <div className="py-20">
         <div className="container mx-auto px-6 md:px-12 xl:px-32">
           <div className="mb-16 text-center">
             <h2 className="mb-4 text-center text-3xl text-black dark:text-white font-extrabold md:text-4xl">

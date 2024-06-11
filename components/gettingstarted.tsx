@@ -113,7 +113,7 @@ export default function Gettingstarted() {
           </div>
           <div className="text-center">
             <p className="text-xl text-gray-900 dark:text-white p-6">To get started simple copy paste the following command in your terminal</p>
-            <code className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-black dark:bg-gray-900 text-white rounded-lg p-4 pl-6">
+            <code className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-black dark:bg-black text-white rounded-lg p-4 pl-6">
               <span className="flex gap-4">
                 <span className="shrink-0 text-gray-500">$</span>
                 <span className="flex-1">
