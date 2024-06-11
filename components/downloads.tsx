@@ -32,7 +32,7 @@ export default function DownloadPage() {
                   <h1 className="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 dark:text-white" data-aos="zoom-y-out">Downloads</h1>
                   <p className="text-lg text-gray-600 mb-8 dark:text-gray-300" data-aos="zoom-y-out">A minimalist Linux OS bringing the open source voice assistant Mycroft A.I. to embedded, low-spec headless and/or small touch friendly screen devices.</p>
                   <div className='flex justify-center items-center' data-aos='zoom-y-out'>
-                    <button className="bg-black dark:bg-gray-800 text-white font-bold py-2 px-4 rounded m-5" onClick={handleToggleDevices}>
+                    <button className="bg-black text-white font-bold py-2 px-4 rounded m-5 dark:bg-gray-800" onClick={handleToggleDevices}>
                       Show Supported Devices
                     </button>
                     <button className="bg-black text-white font-bold py-2 px-4 rounded m-5 dark:bg-gray-800" onClick={handleTogglePeripherals}>
@@ -40,23 +40,22 @@ export default function DownloadPage() {
                     </button>
                   </div>
                 </div>
-              </div>
-              <div className="relative flex py-5 items-center">
-                <div className="flex-grow border-t border-gray-400"></div>
-              </div>
-              <div className="pt-5 flex flex-wrap gap-3 justify-center items-center" data-aos="zoom-y-out">
-                <a href="/downloads" className="bg-green-700 text-white font-bold py-3 px-5 rounded">
+                <div className="flex justify-center items-center bg-gray-100 dark:bg-gray-900 rounded-xl" data-aos="zoom-y-out">
+                <div className="pt-5 flex flex-wrap flex-col gap-3 justify-center items-center" data-aos="zoom-y-out">
+                <a href="#" className="bg-green-700 text-white font-bold py-3 px-5 rounded">
                   Download Buildroot (Stable)
                 </a>
                 <a href="https://downloads.openvoiceos.org/images/raspbian/latest/ovos-raspbian.zip" className="bg-green-700 text-white font-bold py-3 px-5 rounded">
                   Download Raspbian (Stable)
                 </a>
-                <a href="/downloads" className="bg-red-700 text-white font-bold py-3 px-5 rounded">
+                <a href="#" className="bg-red-700 text-white font-bold py-3 px-5 rounded">
                   Download Buildroot (Testing)
                 </a>
                 <a href="https://downloads.openvoiceos.org/images/raspbian/testing/raspbian-ovos-testing-mk1_1688557555.zip" className="bg-red-700 text-white font-bold py-3 px-5 rounded">
                   Download Raspbian (Testing)
                 </a>
+              </div>
+                </div>
               </div>
             </div>
           </div>
