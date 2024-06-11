@@ -1,7 +1,22 @@
 import Image from 'next/image'
-import Mycroft from '@/public/images/mycroft.png'
+import MycroftLight from '@/public/images/mycroft_light.png'
+import MycroftDark from '@/public/images/mycroft_dark.png'
 import React from 'react'
 import Link from 'next/link'
+
+const Mycroft = () => {
+    return (
+      <picture>
+        <source srcSet={MycroftDark.src} media="(prefers-color-scheme: dark)" />
+        <Image
+            src={MycroftLight.src}
+            alt="My image"
+            width={350}
+            height={350}
+        />
+      </picture>
+  );
+};
 
 export default function Getonpi() {
   return (
@@ -12,7 +27,7 @@ export default function Getonpi() {
             <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className='flex justify-center items-center' data-aos="zoom-y-out">
-                  <Image src={Mycroft} alt='Mycroft Mark II' height={350} width={350} />
+                  <Mycroft />
                 </div>
                 <div>
                   <h1 className="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 text-gray-900 dark:text-white" data-aos="zoom-y-out">
