@@ -7,7 +7,7 @@ export default function Logo() {
     <Link href="/" className="block" aria-label="Cruip">
       <div className="flex items-center">
         <Image src={logo} alt='Logo' width={32} height={32} />
-        <span className="ml-2">Open Voice OS</span>
+        <span className="ml-2 dark:text-white">Open Voice OS</span>
       </div>
     </Link>
   )

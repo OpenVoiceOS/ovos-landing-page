@@ -40,29 +40,29 @@ export default function Gettingstarted() {
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Getting started </h3>
-                <p className="text-xl text-gray-600">Installing OVOS couldn't be simpler! Just give our installer a try, and you're all set. We offer two main ways to install OVOS - Docker and Python. </p>
+                <h3 className="h3 mb-3 text-gray-900 dark:text-white">Getting started </h3>
+                <p className="text-xl text-gray-600 dark:text-gray-300">Installing OVOS couldn't be simpler! Just give our installer a try, and you're all set. We offer two main ways to install OVOS - Docker and Python. </p>
               </div>
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white dark:bg-gray-800 shadow-md border-gray-200 dark:border-gray-700 hover:shadow-lg' : 'bg-gray-200 dark:bg-gray-700 border-transparent'}`}
                   href="#"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Python Virtual Environment</div>
-                    <div className="text-gray-600"> If you are a developer, and would like to fiddle with the code, this is the way to go.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-gray-900 dark:text-white">Python Virtual Environment</div>
+                    <div className="text-gray-600 dark:text-gray-300"> If you are a developer, and would like to fiddle with the code, this is the way to go.</div>
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white dark:bg-gray-800 shadow-md border-gray-200 dark:border-gray-700 hover:shadow-lg' : 'bg-gray-200 dark:bg-gray-700 border-transparent'}`}
                   href="#"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Docker</div>
-                    <div className="text-gray-600">If you want a super stable and easy way to run OVOS, Docker is the way to go.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1 text-gray-900 dark:text-white">Docker</div>
+                    <div className="text-gray-600 dark:text-gray-300">If you want a super stable and easy way to run OVOS, Docker is the way to go.</div>
                   </div>
                 </a>
               </div>
@@ -86,7 +86,7 @@ export default function Gettingstarted() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded-full" src={pythonLogo} width={400} height={400} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded-full" src={pythonLogo} width={400} height={400} alt="Python Logo" />
                     </div>
                   </Transition>
                   {/* Item 2 */}
@@ -104,7 +104,7 @@ export default function Gettingstarted() {
                     unmount={false}                     
                   >
                     <div className="relative inline-flex flex-col">
-                      <Image className="md:max-w-none mx-auto rounded-full" src={dockerLogo} width={400} height={400} alt="Features bg" />
+                      <Image className="md:max-w-none mx-auto rounded-full" src={dockerLogo} width={400} height={400} alt="Docker Logo" />
                     </div>
                   </Transition>
                 </div>
@@ -112,13 +112,13 @@ export default function Gettingstarted() {
             </div>
           </div>
           <div className="text-center">
-            <p className="text-xl text-gray-900 p-6">To get started simple copy paste the following command in your terminal</p>
-            <code className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-black text-white rounded-lg p-4 pl-6">
+            <p className="text-xl text-gray-900 dark:text-white p-6">To get started simple copy paste the following command in your terminal</p>
+            <code className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-black dark:bg-gray-900 text-white rounded-lg p-4 pl-6">
               <span className="flex gap-4">
                 <span className="shrink-0 text-gray-500">$</span>
                 <span className="flex-1">
                   <span>sh -c </span>
-                  <span className="text-gray-400">
+                  <span className="text-gray-400 dark:text-gray-500">
                     "curl -s https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/main/installer.sh -o installer.sh && chmod +x installer.sh && sudo ./installer.sh && rm installer.sh"
                   </span>
                 </span>

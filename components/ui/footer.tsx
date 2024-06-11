@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Footer() {
   return (
-    <footer className="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
+    <footer className="p-4 bg-white md:p-8 lg:p-10 dark:bg-black">
   <div className="mx-auto max-w-screen-xl text-center">
       <p className="my-6 text-gray-500 dark:text-gray-400">Mycroft® is a registered trademark of Mycroft AI, Inc. Raspberry Pi® is a trademark of the Raspberry Pi Foundation. All other product names, logos, and brands are property of their respective owners. Use of these names, logos, and brands does not imply endorsement. Any unauthorized use is strictly prohibited.</p>
       <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">

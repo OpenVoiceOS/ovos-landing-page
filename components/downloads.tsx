@@ -29,26 +29,16 @@ export default function DownloadPage() {
             <div className="max-w-6xl mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div>
-                  <h1 className="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Downloads</h1>
-                  <p className="text-lg text-gray-600 mb-8" data-aos="zoom-y-out">A minimalist Linux OS bringing the open source voice assistant Mycroft A.I. to embedded, low-spec headless and/or small touch friendly screen devices.</p>
+                  <h1 className="text-3xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 dark:text-white" data-aos="zoom-y-out">Downloads</h1>
+                  <p className="text-lg text-gray-600 mb-8 dark:text-gray-300" data-aos="zoom-y-out">A minimalist Linux OS bringing the open source voice assistant Mycroft A.I. to embedded, low-spec headless and/or small touch friendly screen devices.</p>
                   <div className='flex justify-center items-center' data-aos='zoom-y-out'>
-                    <button className="bg-black text-white font-bold py-2 px-4 rounded m-5" onClick={handleToggleDevices}>
+                    <button className="bg-black dark:bg-gray-800 text-white font-bold py-2 px-4 rounded m-5" onClick={handleToggleDevices}>
                       Show Supported Devices
                     </button>
-                    <button className="bg-black text-white font-bold py-2 px-4 rounded m-5" onClick={handleTogglePeripherals}>
+                    <button className="bg-black text-white font-bold py-2 px-4 rounded m-5 dark:bg-gray-800" onClick={handleTogglePeripherals}>
                       Show Supported Peripherals
                     </button>
                   </div>
-                </div>
-                <div className="flex justify-center items-center" data-aos="zoom-y-out">
-                  <svg width="256px" height="256px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                      <path d="m8 12 4 4 4-4" stroke="#000000" stroke-width="2.208" stroke-linecap="round" stroke-linejoin="round"></path>
-                      <path d="M12 16V4M19 17v.6c0 1.33-1.07 2.4-2.4 2.4H7.4C6.07 20 5 18.93 5 17.6V17" stroke="#000000" stroke-width="2.208" stroke-miterlimit="10" stroke-linecap="round"></path>
-                    </g>
-                  </svg>
                 </div>
               </div>
               <div className="relative flex py-5 items-center">
