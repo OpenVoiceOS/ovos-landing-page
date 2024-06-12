@@ -49,12 +49,11 @@ export default function Teams() {
             </div>
             <div className="space-y-4 text-center">
               <Image
-                className="w-64 h-64 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-80"
+                className="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
                 src={core1}
-                alt="man"
-                loading="lazy"
-                width="1000"
-                height="667"
+                alt="core"
+                width="640"
+                height="805"
               />
               <div>
                 <h4 className="text-2xl font-bold dark:text-white">Casimiro Ferreira</h4>
@@ -80,8 +79,8 @@ export default function Teams() {
                 src={core3}
                 alt="woman"
                 loading="lazy"
-                width="1000"
-                height="667"
+                width="640"
+                height="805"
               />
               <div>
                 <h4 className="text-2xl font-bold dark:text-white">Peter Steenbergen</h4>
