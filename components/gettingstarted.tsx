@@ -28,7 +28,7 @@ export default function Gettingstarted() {
       'sh -c "curl -s https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/main/installer.sh -o installer.sh && chmod +x installer.sh && sudo ./installer.sh && rm installer.sh"'
     );
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // Reset the copied state after 2 seconds
+    setTimeout(() => setCopied(false), 2000);
   };
 
   return (
@@ -111,23 +111,25 @@ export default function Gettingstarted() {
               </div>
             </div>
           </div>
-          <div className="text-center">
-            <p className="text-xl text-gray-900 dark:text-white p-6">To get started simple copy paste the following command in your terminal</p>
-            <code className="text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-black dark:bg-black text-white rounded-lg p-4 pl-6">
-              <span className="flex gap-4">
+          <div className="text-center p-4 sm:p-6">
+            <p className="text-lg sm:text-xl text-gray-900 dark:text-white mb-4">
+              To get started, simply copy and paste the following command in your terminal:
+            </p>
+            <code className="text-sm sm:text-base inline-flex flex-col sm:flex-row text-left items-center space-y-2 sm:space-y-0 sm:space-x-4 bg-black dark:bg-black text-white rounded-lg p-4">
+              <span className="flex items-center gap-2">
                 <span className="shrink-0 text-gray-500">$</span>
-                <span className="flex-1">
+                <span className="flex-1 break-words">
                   <span>sh -c </span>
-                  <span className="text-gray-400 dark:text-gray-500">
+                  <span className="text-gray-400 dark:text-gray-500 break-all">
                     "curl -s https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/main/installer.sh -o installer.sh && chmod +x installer.sh && sudo ./installer.sh && rm installer.sh"
                   </span>
                 </span>
               </span>
-              <button onClick={handleCopy} className="text-gray-500 hover:text-white">
+              <button onClick={handleCopy} className="text-gray-500 hover:text-white ml-auto sm:ml-0">
                 <FontAwesomeIcon icon={faClipboard} />
                 <span className="sr-only">Copy to clipboard</span>
               </button>
-              {copied && <span className="ml-2 text-green-500">Copied!</span>}
+              {copied && <span className="text-green-500 mt-2 sm:mt-0">Copied!</span>}
             </code>
           </div>
         </div>

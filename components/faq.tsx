@@ -16,7 +16,7 @@ export default function FaqPage() {
                 <div className="mt-6 text-center">
                     <p className="text-lg font-semibold text-gray-900 dark:text-gray-300 pt-8">
                         Got a question that isn't answered here? Check out our{' '}
-                        <Link className="text-blue-700 dark:text-blue-400" href="https://openvoiceos.github.io/community-docs/305-faq/#how-did-ovos-start">
+                        <Link className="text-blue-700 dark:text-blue-400" href="https://openvoiceos.github.io/community-docs/305-faq">
                             Full FAQ
                         </Link>
                     </p>
