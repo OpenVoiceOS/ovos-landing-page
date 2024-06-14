@@ -3,10 +3,17 @@ import Link from 'next/link';
 const friends = [
   {
     name: 'HiveMind',
-    description: 'HiveMind is a community-developed superset or extension of OpenVoiceOS. With HiveMind, you can extend one (or more, but usually just one!) instance of Mycroft to as many devices as you want, including devices that can\'t ordinarily run Mycroft! HiveMind\'s developers have successfully connected to Mycroft from a PinePhone, a 2009 MacBook, and a Raspberry Pi 0, among other devices. Mycroft itself usually runs on our desktop computers or our home servers, but you can use any Mycroft-branded device, or OpenVoiceOS, as your central unit.',
+    description: 'HiveMind is a community-developed superset or extension of OpenVoiceOS. With HiveMind, you can extend one (or more, but usually just one!) instance of OpenVoiceOS to as many devices as you want, including devices that can\'t ordinarily run OVOS! OVOS itself usually runs on our desktop computers or our home servers, but you can use any Mycroft-branded device, or OpenVoiceOS, as your central unit.',
     website: 'https://jarbashivemind.github.io/HiveMind-community-docs',
     source: 'https://github.com/JarbasHiveMind',
     logo: 'https://github.com/JarbasHiveMind/HiveMind-assets/raw/master/logo/hivemind-512.png'
+  },
+  {
+    name: 'TigreGótico',
+    description: 'Timely bug fixes and chat support for OVOS are kindly sponsored by TigreGótico, official OVOS channel partner providing Enterprise support for anything OpenVoiceOS.',
+    website: 'https://github.com/TigreGotico',
+    source: 'https://github.com/TigreGotico',
+    logo: 'https://avatars.githubusercontent.com/u/155266030'
   },
   {
     name: 'NeonGecko',
