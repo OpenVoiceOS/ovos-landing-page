@@ -30,6 +30,13 @@ const friends = [
     logo: 'https://www.visio.org/media/klhfdhpp/visio-logo.svg'
   },
   {
+    name: 'Proyecto Ilenia',
+    description: 'ILENIA is a common and coordinated project between BSC-CNS (AINA project), CENID (VIVES project), HiTZ (NEL-GAITU project) and the University of Santiago de Compostela (NÓS project), which aims to generate digital resources that allow developing multilingual applications in the different languages ​​of Spain. The ILENIA Project collaborates by making the OVOS project known, facilitating product localization and promoting the integration of our linguistic models.',
+    website: 'https://proyectoilenia.es',
+    source: 'https://proyectoilenia.es/recursos',
+    logo: 'https://proyectoilenia.es/wp-content/uploads/2023/09/ILENIA_logo.png'
+  },
+  {
     name: 'Mycroft',
     description: 'Mycroft AI started it all, it was one of the first ever FOSS voice assistants and is the project OVOS descends from. Most applications made for mycroft will work in OVOS and vice-versa.',
     website: 'https://mycroft.ai',
