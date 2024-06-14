@@ -4,7 +4,7 @@ Welcome to Open Voice OS, community-driven, open-source AI voice platform! ðŸŽ‰ð
 
 # Development
 
-To get started with Open Voice OS, follow these steps:
+To run the project locally
 
 1. Clone the repository:
     ```bash
