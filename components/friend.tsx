@@ -27,7 +27,7 @@ const friends = [
     description: 'Mycroft AI started it all, it was one of the first ever FOSS voice assistants and is the project OVOS descends from. Most applications made for mycroft will work in OVOS and vice-versa.',
     website: 'https://mycroft.ai',
     source: 'https://github.com/MycroftAI',
-    logo: 'https://yt3.googleusercontent.com/ytc/AIdro_l_P3GVwHPSSihmb__A5hlkNnO4ZGjdG3SmUk17f-Az2Is=s900-c-k-c0x00ffffff-no-rj'
+    logo: 'https://avatars.githubusercontent.com/u/14171097'
   },
   {
     name: 'Secret Sauce AI',
