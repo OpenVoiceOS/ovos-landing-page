@@ -65,11 +65,11 @@ export default function Friends() {
                 {friend.screenshot && <img src={friend.screenshot} alt={`${friend.name} screenshot`} className="mb-4 rounded-lg shadow-md" />}
                 <div className="flex justify-between items-center">
                   <Link href={friend.website}>
-                    <p className="text-blue-600 dark:text-blue-400 font-bold" target="_blank">Website</p>
+                    <p className="text-blue-600 dark:text-blue-400 font-bold">Website</p>
                   </Link>
                   {friend.source && (
                     <Link href={friend.source}>
-                      <p className="text-blue-600 dark:text-blue-400 font-bold" target="_blank">Source Code</p>
+                      <p className="text-blue-600 dark:text-blue-400 font-bold">Source Code</p>
                     </Link>
                   )}
                 </div>
