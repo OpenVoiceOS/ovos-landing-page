@@ -132,9 +132,6 @@ export default function DownloadPage() {
               We suggest using the Open Voice OS installer for Mycroft devices. It will install all the dependencies and set up the environment for you.
               <Link href="https://github.com/OpenVoiceOS/ovos-installer" className='text-blue-800'> More details here</Link>
             </p>
-            <p className="text-gray-500 mb-8">
-            Neongecko.com is official software provider for Mycroft devices. Open Voice OS is a community project and is not affiliated with Mycroft AI Inc.
-            </p>
             <button className="mt-4 bg-black text-white font-bold py-2 px-4 rounded" onClick={handleCloseMycroft}>
               Close
             </button>
