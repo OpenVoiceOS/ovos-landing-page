@@ -16,6 +16,13 @@ const friends = [
     logo: 'https://avatars.githubusercontent.com/u/155266030'
   },
   {
+    name: 'Smart'Gic',
+    description: 'Building smart things with magic and love! We have Smart\'Gic to thank for our ovos-installer and ovos-docker',
+    website: 'https://www.youtube.com/@smartgic',
+    source: 'https://github.com/smartgic',
+    logo: 'https://avatars.githubusercontent.com/u/73618837?s=200&v=4'
+  },
+  {
     name: 'NeonGecko',
     description: 'Neon was one of the first projects ever to adopt ovos-core as a library to build their own voice assistant, Neon works closely together with OVOS and both projects are mostly compatible.',
     website: 'https://neon.ai',
