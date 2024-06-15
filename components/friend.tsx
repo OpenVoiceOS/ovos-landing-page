@@ -76,7 +76,6 @@ export default function Friends() {
                   <h3 className="text-lg font-semibold dark:text-gray-300">{friend.name}</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">{friend.description}</p>
-                {friend.screenshot && <img src={friend.screenshot} alt={`${friend.name} screenshot`} className="mb-4 rounded-lg shadow-md" />}
                 <div className="flex justify-between items-center">
                   <Link href={friend.website}>
                     <p className="text-blue-600 dark:text-blue-400 font-bold">Website</p>
