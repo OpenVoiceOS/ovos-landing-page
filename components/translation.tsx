@@ -34,7 +34,7 @@ export default function translation() {
         <div className="pt-12 md:pt-16">
           <div className="max-w-6xl mx-auto p-8 bg-gray-200 dark:bg-gray-800 rounded-lg flex flex-col md:flex-row justify-center items-center md:items-start gap-12" data-aos="zoom-y-out">
             <div className="flex justify-center items-center">
-              <FontAwesomeIcon icon={faLanguage} className="text-gray-600 dark:text-gray-100" size="8x" />
+              <FontAwesomeIcon icon={faLanguage} className="text-gray-800 dark:text-gray-100" size="8x" />
             </div>
             <div className="flex flex-col justify-center ml-8">
               <h1 className="text-4xl font-extrabold leading-tighter tracking-tighter mb-4 dark:text-gray-150">Open Voice OS Needs Your Help</h1>
