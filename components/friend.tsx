@@ -3,18 +3,24 @@ import Link from 'next/link';
 const friends = [
   {
     name: 'HiveMind',
-    description: 'HiveMind is a community-developed superset or extension of OpenVoiceOS. With HiveMind, you can extend one (or more, but usually just one!) instance of Mycroft to as many devices as you want, including devices that can\'t ordinarily run Mycroft! HiveMind\'s developers have successfully connected to Mycroft from a PinePhone, a 2009 MacBook, and a Raspberry Pi 0, among other devices. Mycroft itself usually runs on our desktop computers or our home servers, but you can use any Mycroft-branded device, or OpenVoiceOS, as your central unit.',
+    description: 'HiveMind is a community-developed superset or extension of OpenVoiceOS. With HiveMind, you can extend one (or more, but usually just one!) instance of OpenVoiceOS to as many devices as you want, including devices that can\'t ordinarily run OVOS! OVOS itself usually runs on our desktop computers or our home servers, but you can use any Mycroft-branded device, or OpenVoiceOS, as your central unit.',
     website: 'https://jarbashivemind.github.io/HiveMind-community-docs',
     source: 'https://github.com/JarbasHiveMind',
     logo: 'https://github.com/JarbasHiveMind/HiveMind-assets/raw/master/logo/hivemind-512.png'
   },
   {
-    name: 'Plasma Bigscreen',
-    description: 'Plasma Bigscreen integrates and uses OpenVoiceOS as voice framework stack to serve voice queries and voice applications (skills with a homescreen), one can easily enable mycroft / ovos integration in the bigscreen launcher by installing ovos core and required services and enabling the integration switch in the bigscreen KCM.',
-    website: 'https://plasma-bigscreen.org',
-    source: 'https://invent.kde.org/plasma/plasma-bigscreen',
-    logo: 'https://plasma-bigscreen.org/img/logo.png',
-    screenshot: 'https://plasma-bigscreen.org/img/screenshot-1.png'
+    name: 'TigreGótico',
+    description: 'Timely bug fixes and chat support for OVOS are kindly sponsored by TigreGótico, official OVOS R&D partner providing Enterprise support for anything OpenVoiceOS.',
+    website: 'https://github.com/TigreGotico',
+    source: 'https://github.com/TigreGotico',
+    logo: 'https://avatars.githubusercontent.com/u/155266030'
+  },
+  {
+    name: 'Smart'Gic',
+    description: 'Building smart things with magic and love! We have Smart\'Gic to thank for our ovos-installer and ovos-docker',
+    website: 'https://www.youtube.com/@smartgic',
+    source: 'https://github.com/smartgic',
+    logo: 'https://avatars.githubusercontent.com/u/73618837?s=200&v=4'
   },
   {
     name: 'NeonGecko',
@@ -24,11 +30,25 @@ const friends = [
     logo: 'https://neon.ai/wp-content/uploads/2024/04/neon-ai-artificial-intelligence-2-2-3.png'
   },
   {
+    name: 'Proyecto Ilenia',
+    description: 'ILENIA is a common and coordinated project between BSC-CNS (AINA project), CENID (VIVES project), HiTZ (NEL-GAITU project) and the University of Santiago de Compostela (NÓS project), which aims to generate digital resources that allow developing multilingual applications in the different languages ​​of Spain. The ILENIA Project collaborates by making the OVOS project known, facilitating product localization and promoting the integration of our linguistic models.',
+    website: 'https://proyectoilenia.es',
+    source: 'https://proyectoilenia.es/recursos',
+    logo: 'https://proyectoilenia.es/wp-content/uploads/2023/09/ILENIA_logo.png'
+  },
+  {
+    name: 'Koninklijke Visio',
+    description: 'Visio offers information and advice, but also various forms of research, guidance, rehabilitation, education, work and living. These services are available for people who are visually impaired or blind, even if they also have an intellectual, physical or other sensory disability.',
+    website: 'http://www.visio.org',
+    source: 'https://github.com/timonvanhasselt',
+    logo: 'https://www.visio.org/media/klhfdhpp/visio-logo.svg'
+  },
+  {
     name: 'Mycroft',
     description: 'Mycroft AI started it all, it was one of the first ever FOSS voice assistants and is the project OVOS descends from. Most applications made for mycroft will work in OVOS and vice-versa.',
     website: 'https://mycroft.ai',
     source: 'https://github.com/MycroftAI',
-    logo: 'https://mycroft.ai/wp-content/uploads/2017/02/Mycroft-Twitter-Profile.jpg'
+    logo: 'https://avatars.githubusercontent.com/u/14171097'
   },
   {
     name: 'Secret Sauce AI',
@@ -36,12 +56,6 @@ const friends = [
     website: 'https://github.com/secretsauceai/secret_sauce_ai',
     source: 'https://github.com/secretsauceai',
     logo: 'https://avatars.githubusercontent.com/u/77728504?v=4'
-  },
-  {
-    name: 'Blue Systems',
-    description: 'Blue Systems claims to have one goal "We are a dedicated team from around the world to work on one goal: The advancement of free software solutions to be viable for daily use in every computing field." They currently host a TTS service used by the [ovos-tts-plugin-mimic3-server](https://github.com/OpenVoiceOS/ovos-tts-plugin-mimic3-server)',
-    website: 'https://blue-systems.com',
-    logo: 'https://blue-systems.com/wp-content/uploads/2019/08/bs-logo.png'
   }
 ];
 
