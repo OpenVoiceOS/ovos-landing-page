@@ -3,7 +3,7 @@ import Link from 'next/link';
 const friends = [
   {
     name: 'HiveMind',
-    description: 'HiveMind is a community-developed superset or extension of OpenVoiceOS. With HiveMind, you can extend one (or more, but usually just one!) instance of OpenVoiceOS to as many devices as you want, including devices that can\'t ordinarily run OVOS! OVOS itself usually runs on our desktop computers or our home servers, but you can use any Mycroft-branded device, or OpenVoiceOS, as your central unit.',
+    description: 'HiveMind is a community-developed superset or extension of OpenVoiceOS. With HiveMind, you can extend one (or more, but usually just one!) instance of OpenVoiceOS to as many devices as you want, including devices that can\'t ordinarily run OVOS!',
     website: 'https://jarbashivemind.github.io/HiveMind-community-docs',
     source: 'https://github.com/JarbasHiveMind',
     logo: 'https://github.com/JarbasHiveMind/HiveMind-assets/raw/master/logo/hivemind-512.png'
@@ -31,7 +31,7 @@ const friends = [
   },
   {
     name: 'Proyecto Ilenia',
-    description: 'ILENIA is a common and coordinated project between BSC-CNS (AINA project), CENID (VIVES project), HiTZ (NEL-GAITU project) and the University of Santiago de Compostela (NÓS project), which aims to generate digital resources that allow developing multilingual applications in the different languages ​​of Spain. The ILENIA Project collaborates by making the OVOS project known, facilitating product localization and promoting the integration of our linguistic models.',
+    description: 'ILENIA is a common and coordinated project between BSC-CNS (AINA project), CENID (VIVES project), HiTZ (NEL-GAITU project) and the University of Santiago de Compostela (NÓS project), which aims to generate digital resources that allow developing applications in the different languages ​​of Spain. The ILENIA Project collaborates with OVOS, facilitating product localization and promoting the integration of their linguistic models.',
     website: 'https://proyectoilenia.es',
     source: 'https://proyectoilenia.es/recursos',
     logo: 'https://proyectoilenia.es/wp-content/uploads/2023/09/ILENIA_logo.png'
@@ -40,7 +40,7 @@ const friends = [
     name: 'Koninklijke Visio',
     description: 'Visio offers information and advice, but also various forms of research, guidance, rehabilitation, education, work and living. These services are available for people who are visually impaired or blind, even if they also have an intellectual, physical or other sensory disability.',
     website: 'http://www.visio.org',
-    source: 'https://github.com/timonvanhasselt',
+    source: 'https://voicelab.visio.org/',
     logo: 'https://www.visio.org/media/klhfdhpp/visio-logo.svg'
   },
   {
@@ -52,7 +52,7 @@ const friends = [
   },
   {
     name: 'Secret Sauce AI',
-    description: 'Secret Sauce AI is a coordinated community of tech minded AI enthusiasts working together on projects to identify blockers and improve the basic open source tools and pipeline components in the AI (voice) assistant pipeline (wakeword, ASR, NLU, NLG, TTS). The focus is mostly geared toward deployment on edge devices and self-hosted solutions. This is not a voice assistant project in and of itself, rather Secret Sauce AI helps AI (voice) assistant projects come together as individuals and solve basic problems faced by the entire community.',
+    description: 'Secret Sauce AI is a coordinated community of tech minded AI enthusiasts working together on projects to identify blockers and improve open source tools and pipeline components in the AI assistant pipeline. This is not a voice assistant project in and of itself, rather Secret Sauce AI helps assistant projects come together as individuals and solve problems faced by the entire community.',
     website: 'https://github.com/secretsauceai/secret_sauce_ai',
     source: 'https://github.com/secretsauceai',
     logo: 'https://avatars.githubusercontent.com/u/77728504?v=4'
