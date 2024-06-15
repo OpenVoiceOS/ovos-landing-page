@@ -35,6 +35,11 @@ export default function Header() {
           <nav className="hidden md:flex md:grow">
             {/* Desktop sign in links */}
             <ul className="flex grow justify-end flex-wrap items-center">
+            <li>
+                <Link href="/translation">
+                  <p className={`font-medium ${pathname === '/translation' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Translation</p>
+                </Link>
+              </li>
               <li>
                 <Link href="/downloads">
                   <p className={`font-medium ${pathname === '/downloads' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Downloads</p>
