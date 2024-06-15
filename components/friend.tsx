@@ -16,7 +16,7 @@ const friends = [
     logo: 'https://avatars.githubusercontent.com/u/155266030'
   },
   {
-    name: 'Smart'Gic',
+    name: 'Smart\'Gic',
     description: 'Building smart things with magic and love! We have Smart\'Gic to thank for our ovos-installer and ovos-docker',
     website: 'https://www.youtube.com/@smartgic',
     source: 'https://github.com/smartgic',
