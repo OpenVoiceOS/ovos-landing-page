@@ -23,7 +23,7 @@ export default function Header() {
 
   return (
     <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top ? 'bg-white dark:bg-stone-900 backdrop-blur-sm shadow-lg' : ''}`}>
-      <div className="max-w-6xl mx-auto px-5 sm:px-6">
+      <div className="mx-auto px-5 sm:px-6">
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Site branding */}
@@ -38,6 +38,11 @@ export default function Header() {
               <li>
                 <Link href="/downloads">
                   <p className={`font-medium ${pathname === '/downloads' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Downloads</p>
+                </Link>
+              </li>
+              <li>
+                <Link href="/about">
+                  <p className={`font-medium ${pathname === '/about' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>About</p>
                 </Link>
               </li>
               <li>

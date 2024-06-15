@@ -9,6 +9,7 @@ export default function Footer() {
       <ul className="flex flex-wrap justify-center items-center mb-6 text-gray-900 dark:text-white">
           <li><Link href="/" className="mr-4 hover:underline md:mr-6 ">Home</Link></li>
           <li><Link href="/downloads" className="mr-4 hover:underline md:mr-6 ">Downloads</Link></li>
+          <li><Link href="/about" className="mr-4 hover:underline md:mr-6 ">About</Link></li>
           <li><Link href="https://openvoiceos.github.io/ovos-technical-manual" className="mr-4 hover:underline md:mr-6 ">Documentation</Link></li>
           <li><Link href="/team" className="mr-4 hover:underline md:mr-6 ">Teams</Link></li>
           <li><Link href="#" className="mr-4 hover:underline md:mr-6 ">Blog</Link></li>

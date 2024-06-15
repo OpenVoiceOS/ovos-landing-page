@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function About() {
   return (
-    <section className="relative">
+    <section className="relative mt-32">
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6" data-aos="zoom-y-out" data-aos-delay="150">
         <div className="py-1 md:py-2">

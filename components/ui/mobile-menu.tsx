@@ -68,6 +68,9 @@ export default function MobileMenu() {
               <Link href="/downloads" className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Downloads</Link>
             </li>
             <li>
+              <Link href="/about" className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center" onClick={() => setMobileNavOpen(false)}>About</Link>
+            </li>
+            <li>
               <Link href="https://openvoiceos.github.io/ovos-technical-manual" className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center" onClick={() => setMobileNavOpen(false)}>Documentation</Link>
             </li>
             <li>
