@@ -10,7 +10,7 @@ const friends = [
   },
   {
     name: 'TigreGótico',
-    description: 'Timely bug fixes and chat support for OVOS are kindly sponsored by TigreGótico, official OVOS channel partner providing Enterprise support for anything OpenVoiceOS.',
+    description: 'Timely bug fixes and chat support for OVOS are kindly sponsored by TigreGótico, official OVOS R&D partner providing Enterprise support for anything OpenVoiceOS.',
     website: 'https://github.com/TigreGotico',
     source: 'https://github.com/TigreGotico',
     logo: 'https://avatars.githubusercontent.com/u/155266030'
@@ -30,18 +30,18 @@ const friends = [
     logo: 'https://neon.ai/wp-content/uploads/2024/04/neon-ai-artificial-intelligence-2-2-3.png'
   },
   {
-    name: 'Koninklijke Visio',
-    description: 'Visio offers information and advice, but also various forms of research, guidance, rehabilitation, education, work and living. These services are available for people who are visually impaired or blind, even if they also have an intellectual, physical or other sensory disability.',
-    website: 'http://www.visio.org',
-    source: 'https://github.com/timonvanhasselt',
-    logo: 'https://www.visio.org/media/klhfdhpp/visio-logo.svg'
-  },
-  {
     name: 'Proyecto Ilenia',
     description: 'ILENIA is a common and coordinated project between BSC-CNS (AINA project), CENID (VIVES project), HiTZ (NEL-GAITU project) and the University of Santiago de Compostela (NÓS project), which aims to generate digital resources that allow developing multilingual applications in the different languages ​​of Spain. The ILENIA Project collaborates by making the OVOS project known, facilitating product localization and promoting the integration of our linguistic models.',
     website: 'https://proyectoilenia.es',
     source: 'https://proyectoilenia.es/recursos',
     logo: 'https://proyectoilenia.es/wp-content/uploads/2023/09/ILENIA_logo.png'
+  },
+  {
+    name: 'Koninklijke Visio',
+    description: 'Visio offers information and advice, but also various forms of research, guidance, rehabilitation, education, work and living. These services are available for people who are visually impaired or blind, even if they also have an intellectual, physical or other sensory disability.',
+    website: 'http://www.visio.org',
+    source: 'https://github.com/timonvanhasselt',
+    logo: 'https://www.visio.org/media/klhfdhpp/visio-logo.svg'
   },
   {
     name: 'Mycroft',
