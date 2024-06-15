@@ -12,6 +12,7 @@ export default function Footer() {
           <li><Link href="https://openvoiceos.github.io/ovos-technical-manual" className="mr-4 hover:underline md:mr-6 ">Documentation</Link></li>
           <li><Link href="/team" className="mr-4 hover:underline md:mr-6 ">Teams</Link></li>
           <li><Link href="#" className="mr-4 hover:underline md:mr-6 ">Blog</Link></li>
+          <li><Link href="/translation" className="mr-4 hover:underline md:mr-6 ">Translation</Link></li>
       </ul>
       <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <Link href="/" className="hover:underline">Open Voice OS</Link>. All Rights Reserved.</span>
   </div>
