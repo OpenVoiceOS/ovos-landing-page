@@ -70,13 +70,13 @@ export default function Friends() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {friends.map((friend, index) => (
-              <div key={index} className="border rounded-lg shadow-lg p-6 bg-white dark:bg-gray-800">
+              <div key={index} className="flex flex-col rounded-lg shadow-lg p-6 bg-gray-200 dark:bg-gray-800">
                 <div className="flex items-center mb-4">
                   <img src={friend.logo} alt={friend.name} className="w-12 h-12 mr-4" />
                   <h3 className="text-lg font-semibold dark:text-gray-300">{friend.name}</h3>
                 </div>
                 <p className="text-gray-600 dark:text-gray-400 mb-4">{friend.description}</p>
-                <div className="flex justify-between items-center">
+                <div className="mt-auto flex justify-between items-center">
                   <Link href={friend.website}>
                     <p className="text-blue-600 dark:text-blue-400 font-bold">Website</p>
                   </Link>

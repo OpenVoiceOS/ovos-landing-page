@@ -7,7 +7,7 @@ export default function Timeline() {
                 <div className="grid gap-4 mx-4 sm:grid-cols-12">
                     <div className="col-span-12 sm:col-span-3">
                         <div className="text-center sm:text-left mb-14">
-                            <h3 className="text-3xl font-extrabold">History</h3>
+                            <h3 className="text-3xl font-extrabold dark:text-white">History</h3>
                             <span className="dark:text-white">Open Voice OS is a project that has been in development for a few years now. Here's a brief history of the project.</span>
                         </div>
                     </div>
