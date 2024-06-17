@@ -1,3 +1,4 @@
+import { link } from 'fs';
 import React from 'react';
 
 function TimelineEvent({ title, date, description, link }: { title: string, date: string, description: string, link?: string }) {
@@ -10,7 +11,7 @@ function TimelineEvent({ title, date, description, link }: { title: string, date
                     {description}
                 </a>
             ) : (
-                <p className="mt-3">{description}</p>
+                <p className="mt-3 dark:text-gray-200">{description}</p>
             )}
         </div>
     );
@@ -79,7 +80,8 @@ export default function Timeline() {
         {
             title: 'OpenVoiceOS Fundraiser',
             date: 'March 2023',
-            description: 'OpenVoiceOS starts fundraiser to form a non-profit foundation legal entity.'
+            description: 'OpenVoiceOS starts fundraiser to form a non-profit foundation legal entity.',
+            link: 'https://www.gofundme.com/f/openvoiceos'
         },
         {
             title: 'Aditya Leaves OpenVoiceOS',
