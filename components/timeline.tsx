@@ -108,11 +108,10 @@ export default function Timeline() {
                     <div className="col-span-12 sm:col-span-3">
                         <div className="text-center sm:text-left mb-14">
                             <h3 className="text-3xl font-extrabold dark:text-white">History</h3>
-                            <span className="dark:text-white"></span>
                         </div>
                     </div>
                     <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
-                        <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-1.5 before:bg-black dark:before:bg-white">
+                        <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-black dark:before:bg-white">
                             {events.map((event, index) => (
                                 <TimelineEvent
                                     key={index}
