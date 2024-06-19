@@ -36,6 +36,13 @@ export default function ContactUs() {
             Email
           </Link>
         </div>
+        <div className="flex items-center justify-center pt-6">
+          <div className="bg-black dark:bg-white dark:text-black rounded-xl p-5 mx-auto" data-aos="zoom-y-out" data-aos-delay="150">
+            <p className="text-white dark:text-black text-center font-extrabold" data-aos="zoom-y-out" data-aos-delay="150">
+              OpenVoiceOS is looking for translators to help us check <Link href="/translation" className="underline">translation section</Link>.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   )
