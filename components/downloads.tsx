@@ -69,7 +69,7 @@ export default function DownloadPage() {
           </div>
         </div>
         <p className="text-lg rounded-xl p-3 max-w-2xl mx-auto text-gray-600 mb-8 dark:text-gray-300" data-aos="zoom-y-out">
-          Note: If you want to install Open Voice OS on your Laptop/Desktop, consider using our installer script. It will install all the dependencies and set up the environment for you.
+          Note: If you want to install Open Voice OS on your Laptop/Desktop, consider using our installer script. It will install all the dependencies and set up the environment for you. It supports all major Linux distributions as well as Raspberry Pi 3, 4, and 5.
           <Link href="https://github.com/OpenVoiceOS/ovos-installer" className='text-blue-800'> More details here</Link>
         </p>
       </div>
@@ -92,9 +92,10 @@ export default function DownloadPage() {
           <div className="bg-white p-5 m-5 rounded-lg shadow-lg">
             <h2 className="text-xl md:text-xl font-bold leading-tighter tracking-tighter mb-4">Supported Devices</h2>
             <ul>
-              <li>Raspberry Pi 3 (Including the Mark 1) (Work In Progress)</li>
+              <li>Raspberry Pi 3 (Including the Mark 1)</li>
               <li>Raspberry Pi 4 - Mark 2 / Mark 2 Dev Kit / ReSpeaker</li>
-              <li>x86-64 (Work In Progress)</li>
+              <li>x86-64</li>
+              <li className='mt-5'>Supported Linux distributions can be found <Link href="https://github.com/OpenVoiceOS/ovos-installer?tab=readme-ov-file#supported-linux-distributions" className='text-blue-800'>here</Link></li>
             </ul>
             <button className="mt-4 bg-black text-white font-bold py-2 px-4 rounded" onClick={handleCloseDevices}>
               Close
@@ -129,8 +130,7 @@ export default function DownloadPage() {
           <div className="bg-white p-5 m-5 rounded-lg shadow-lg max-w-2xl">
             <h2 className="text-xl md:text-xl font-bold leading-tighter tracking-tighter mb-4">Mycroft Devices</h2>
             <p className="text-lg text-gray-700 mb-8">
-              We suggest using the Open Voice OS installer for Mycroft devices. It will install all the dependencies and set up the environment for you.
-              <Link href="https://github.com/OpenVoiceOS/ovos-installer" className='text-blue-800'> More details here</Link>
+              We maintain buildroot and prebuild images for Raspberry Pi which are compatible with Mycroft devices. You can download the latest image from <Link href="https://ovosimages.ziggyai.online/raspbian/" className='text-blue-800'>here</Link>. 
             </p>
             <button className="mt-4 bg-black text-white font-bold py-2 px-4 rounded" onClick={handleCloseMycroft}>
               Close

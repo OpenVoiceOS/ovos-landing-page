@@ -1,42 +1,46 @@
-'use client'
+'use client';
 
-import { useState, useRef, useEffect } from 'react'
-import { Transition } from '@headlessui/react'
-import Link from 'next/link'
+import { useState, useRef, useEffect } from 'react';
+import { Transition } from '@headlessui/react';
+import Link from 'next/link';
+import { ThemeSwitcher } from './theme';
 
 export default function MobileMenu() {
-  const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
+  const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
+  const [mounted, setMounted] = useState<boolean>(false);
 
-  const trigger = useRef<HTMLButtonElement>(null)
-  const mobileNav = useRef<HTMLDivElement>(null)
+  const trigger = useRef<HTMLButtonElement>(null);
+  const mobileNav = useRef<HTMLDivElement>(null);
 
-  // Close the mobile menu on click outside
   useEffect(() => {
-    const clickHandler = ({ target }: { target: EventTarget | null }): void => {
-      if (!mobileNav.current || !trigger.current) return
-      if (!mobileNavOpen || mobileNav.current.contains(target as Node) || trigger.current.contains(target as Node)) return
-      setMobileNavOpen(false)
-    }
-    document.addEventListener('click', clickHandler)
-    return () => document.removeEventListener('click', clickHandler)
-  })
+    setMounted(true);
 
-  // Close the mobile menu if the esc key is pressed
+    const clickHandler = ({ target }: { target: EventTarget | null }): void => {
+      if (!mobileNav.current || !trigger.current) return;
+      if (!mobileNavOpen || mobileNav.current.contains(target as Node) || trigger.current.contains(target as Node)) return;
+      setMobileNavOpen(false);
+    };
+    document.addEventListener('click', clickHandler);
+    return () => document.removeEventListener('click', clickHandler);
+  }, [mobileNavOpen]);
+
   useEffect(() => {
     const keyHandler = ({ keyCode }: { keyCode: number }): void => {
-      if (!mobileNavOpen || keyCode !== 27) return
-      setMobileNavOpen(false)
-    }
-    document.addEventListener('keydown', keyHandler)
-    return () => document.removeEventListener('keydown', keyHandler)
-  })
+      if (!mobileNavOpen || keyCode !== 27) return;
+      setMobileNavOpen(false);
+    };
+    document.addEventListener('keydown', keyHandler);
+    return () => document.removeEventListener('keydown', keyHandler);
+  }, [mobileNavOpen]);
+
+  if (!mounted) return null;
 
   return (
     <div className="flex md:hidden">
-      {/* Hamburger button */}
+      <ThemeSwitcher />
       <button
         ref={trigger}
-        className={`hamburger ${mobileNavOpen && 'active'}`}
+        className={`hamburger ml-5 ${mobileNavOpen && 'active'}`}
         aria-controls="mobile-nav"
         aria-expanded={mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
@@ -91,5 +95,5 @@ export default function MobileMenu() {
         </Transition>
       </div>
     </div>
-  )
+  );
 }
