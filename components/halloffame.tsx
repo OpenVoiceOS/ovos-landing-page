@@ -32,6 +32,12 @@ const teamMembers: TeamMember[] = [
         handle: 'emphasize',
         image: 'https://avatars.githubusercontent.com/u/25036977',
         country: 'Germany 🇩🇪',
+    },
+    {
+        name: 'Suvan Banerjee',
+        handle: 'suvanbanerjee',
+        image: 'https://avatars.githubusercontent.com/u/104707806',
+        country: 'India 🇮🇳',
     }
 ];
 
