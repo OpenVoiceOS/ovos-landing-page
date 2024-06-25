@@ -2,11 +2,12 @@ import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
 import React from 'react'
 import Link from 'next/link'
+import Release from './release'
 
 export default function Hero() {
   return (
-    <section className="relative h-screen flex justify-center items-center">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+    <section className="relative md:h-screen flex justify-center items-center">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
         <div className="pt-32 pb-5 md:pt-40 md:pb-5">
           <div className="pb-5 md:pb-5">
             <div className="max-w-6xl mx-auto">
@@ -20,6 +21,7 @@ export default function Hero() {
                   <Image src={Logo} alt='Logo' width={350} height={350} />
                 </div>
               </div>
+              <Release />
             </div>
           </div>
         </div>

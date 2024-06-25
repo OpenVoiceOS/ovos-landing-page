@@ -75,7 +75,8 @@ export default function Timeline() {
         {
             title: 'MycroftAI Partners with NeonAI',
             date: 'February 2023',
-            description: 'MycroftAI partners up with NeonAI to take over the Mark 2 fulfillments and not much later ends its business.'
+            description: 'MycroftAI partners up with NeonAI to take over the Mark 2 fulfillments and not much later ends its business.',
+            link : 'https://community.openconversational.ai/t/update-from-the-ceo-part-1/13268'
         },
         {
             title: 'OpenVoiceOS Fundraiser',
@@ -95,9 +96,9 @@ export default function Timeline() {
             description: 'Mycroft forums move to Open Conversational AI.'
         },
         {
-            title: 'OpenVoiceOS Website Launch',
-            date: 'June 2024',
-            description: 'OpenVoiceOS establishes its online presence with this website.'
+            title: 'OpenVoiceOS get\'s out of beta',
+            date: 'August 2024 (planned)',
+            description: 'OpenVoiceOS get\'s out of beta and is ready for the masses.'
         }
     ];
 
