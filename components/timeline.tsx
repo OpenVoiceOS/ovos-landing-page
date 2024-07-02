@@ -63,6 +63,12 @@ export default function Timeline() {
             description: 'Casimiro Ferreira (Jarbas), Aditya Mehra (AIX), and Peter Steenbergen (j1nx) join forces as Python developer, GUI/QT KDE developer, and Linux OS developer respectively.'
         },
         {
+            title: 'NeonCore recreated on top of OVOS and relicensed under a FOSS license"',
+            date: 'October 2021',
+            description: 'NeonCore recreated on top of OVOS and relicensed under a FOSS license',
+            link: 'https://github.com/NeonGeckoCom/NeonCore/commit/8cb1d8edb3d4ffff8aa9aaf695e1fe3463939287'
+        },
+        {
             title: 'Daniel McKnight Joins OpenVoiceOS',
             date: 'November 2021',
             description: 'Daniel McKnight, NeonAI\'s lead developer, joins the team.'
