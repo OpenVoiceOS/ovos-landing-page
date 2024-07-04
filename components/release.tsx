@@ -1,4 +1,5 @@
-'use client'
+'use client';
+
 import React from "react";
 import Link from "next/link";
 
@@ -15,10 +16,10 @@ export default function Release() {
 
     return (
         <div className="relative mx-auto items-center justify-center p-8">
-            <div className="bg-black dark:bg-white dark:text-black text-white rounded-xl p-5 mx-auto max-w-fit" data-aos="zoom-y-out" data-aos-delay="150">
-                <p className="text-center font-extrabold" data-aos="zoom-y-out" data-aos-delay="150">
-                    🎉 OpenVoiceOS v0.0.8 pre-release is now available! <button onClick={handleToggleDialog} className="underline">Release Notes</button>
-                </p>
+            <div className="dark:text-white p-5 mx-auto max-w-fit" data-aos="zoom-y-out" data-aos-delay="150">
+                <button onClick={handleToggleDialog} className="text-center text-xl font-extrabold relative underline underline-offset-4 decoration-[#fb4c4c] decoration-4" data-aos="zoom-y-out" data-aos-delay="150" id="message">
+                    🎉 OpenVoiceOS v0.0.8 pre-release is now available!
+                </button>
             </div>
             {showDialog && (
                 <div className="fixed inset-0 flex items-center justify-center z-50">

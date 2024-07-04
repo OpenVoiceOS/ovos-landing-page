@@ -104,7 +104,8 @@ export default function Timeline() {
         {
             title: 'OpenVoiceOS get\'s out of beta',
             date: 'August 2024 (planned)',
-            description: 'OpenVoiceOS get\'s out of beta and is ready for the masses.'
+            description: 'OpenVoiceOS get\'s out of beta and is ready for the masses.',
+            link: 'https://community.openconversational.ai/t/openvoiceos-0-0-8-qa-process-begins-now/15372'
         }
     ];
 
