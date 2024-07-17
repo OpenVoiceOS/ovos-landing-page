@@ -58,7 +58,7 @@ export default function DownloadPage() {
         <div className='bg-gray-200 dark:bg-gray-800 rounded-xl p-5 max-w-2xl mx-auto my-auto'>
           <h1 className='text-2xl font-bold text-center pb-8 dark:text-gray-200'>Which device are you using?</h1>
           <div className="flex flex-col md:flex-row justify-center items-center">
-            <Link href="https://downloads.openvoiceos.org/images/raspbian/latest/ovos-raspbian.zip">
+            <Link href="https://ovosimages.ziggyai.online/raspbian/testing/raspOVOS-headless-dev.zip">
               <Image src={Pi} alt="Raspberry Pi" width={300} height={300} className="mx-auto" />
               <p className="text-lg text-gray-600 mb-8 dark:text-gray-300 text-center" data-aos="zoom-y-out"> Raspberry Pi </p>
             </Link>
