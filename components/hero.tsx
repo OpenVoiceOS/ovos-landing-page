@@ -1,10 +1,18 @@
+'use client'
+
 import Image from 'next/image'
 import Logo from '@/public/images/logo.png'
-import React from 'react'
+import React, { useRef } from "react";
 import Link from 'next/link'
 import Release from './release'
+import { cn } from "@/lib/utils";
+import DotPattern from "@/components/magicui/dot-pattern";
+import type { ConfettiRef } from "@/components/magicui/confetti";
+import Confetti from "@/components/magicui/confetti";
+
 
 export default function Hero() {
+  const confettiRef = useRef<ConfettiRef>(null);
   return (
     <section className="relative md:h-screen flex justify-center items-center">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 ">
@@ -22,10 +30,28 @@ export default function Hero() {
                 </div>
               </div>
               <Release />
+              <Confetti
+                    ref={confettiRef}
+                    particleCount={100}
+                    className="absolute left-0 top-0 z-0 w-full h-full" 
+                    onLoad={() => {
+                        confettiRef.current?.fire({});
+                    }}
+                />
             </div>
           </div>
         </div>
       </div>
+      <DotPattern
+        width={20}
+        height={20}
+        cx={1}
+        cy={1}
+        cr={1}
+        className={cn(
+          "[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)] ",
+        )}
+      />
     </section>
   )
 }
