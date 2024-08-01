@@ -32,7 +32,6 @@ export default function Hero() {
               <Release />
               <Confetti
                     ref={confettiRef}
-                    particleCount={100}
                     className="absolute left-0 top-0 z-0 w-full h-full" 
                     onLoad={() => {
                         confettiRef.current?.fire({});
