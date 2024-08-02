@@ -32,7 +32,7 @@ export default function Hero() {
               <Release />
               <Confetti
                     ref={confettiRef}
-                    className="absolute left-0 top-0 z-0 w-full h-full" 
+                    className="absolute left-0 top-0 -z-1 w-full h-full" 
                     onLoad={() => {
                         confettiRef.current?.fire({});
                     }}
