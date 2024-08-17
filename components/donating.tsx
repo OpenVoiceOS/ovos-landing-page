@@ -35,14 +35,14 @@ const featuresData = [
   },
 ];
 
-const Methods = ({ title, description, icon, url }) => (
+const Methods = ({ title, description, icon, url }: { title: string, description: string, icon: JSX.Element, url: string }) => (
   <div className="text-center bg-white dark:bg-gray-800 p-8 rounded-xl shadow">
     <div className="inline-flex items-center justify-center w-16 h-16 mb-6 rounded-full object-cover">
       {icon}
     </div>
     <h3 className="mb-2 text-xl font-bold dark:text-white">{title}</h3>
     <p className="font-medium text-gray-500 dark:text-gray-300 md:text-justify">{description}</p>
-    <a className="btn font-bold text-white bg-black dark:bg-gray-300 dark:text-black rounded-3xl mx-auto m-5" href = {url}>Learn More</a>
+    <a className="btn font-bold text-white bg-black dark:bg-gray-300 dark:text-black rounded-3xl mx-auto m-5" href={url}>Learn More</a>
   </div>
 );
 
