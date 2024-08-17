@@ -42,7 +42,7 @@ const Methods = ({ title, description, icon, url }) => (
     </div>
     <h3 className="mb-2 text-xl font-bold dark:text-white">{title}</h3>
     <p className="font-medium text-gray-500 dark:text-gray-300 md:text-justify">{description}</p>
-    <a className="btn font-bold text-white bg-black dark:bg-gray-800 dark:text-gray-200 rounded-3xl mx-auto m-5" href = {url}>Learn More</a>
+    <a className="btn font-bold text-white bg-black dark:bg-gray-300 dark:text-black rounded-3xl mx-auto m-5" href = {url}>Learn More</a>
   </div>
 );
 
