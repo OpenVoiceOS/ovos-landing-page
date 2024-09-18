@@ -62,7 +62,7 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/contribute">
+                <Link href="/contribution">
                   <p className={`font-medium ${pathname === '/blogs' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Contribution</p>
                 </Link>
               </li>
