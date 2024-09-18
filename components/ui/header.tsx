@@ -62,6 +62,11 @@ export default function Header() {
                 </Link>
               </li>
               <li>
+                <Link href="/contribute">
+                  <p className={`font-medium ${pathname === '/blogs' ? 'font-extrabold text-black dark:text-white' : 'text-gray-600'} hover:text-gray-900 dark:hover:text-white px-5 py-3 flex items-center transition duration-150 ease-in-out`}>Contribution</p>
+                </Link>
+              </li>
+              <li>
                 <Link href="/">
                   <p className={`btn-sm bg-black text-white dark:text-black dark:bg-white mx-3 rounded-xl`}>
                     <span>Home</span>
