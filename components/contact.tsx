@@ -19,7 +19,7 @@ export default function ContactUs() {
             <FontAwesomeIcon icon={faGithub} className="mr-2" />
             GitHub
           </Link>
-          <Link href="https://openvoiceos.github.io/community-docs/" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-900 dark:hover:bg-gray-700">
+          <Link href="https://openvoiceos.github.io/ovos-technical-manual/" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-900 dark:hover:bg-gray-700">
             <FontAwesomeIcon icon={faBook} className="mr-2" />
             Documentation
           </Link>
