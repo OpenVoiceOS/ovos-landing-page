@@ -17,10 +17,13 @@ export default function Release() {
     return (
         <div className="relative mx-auto items-center justify-center p-8">
             <div className="dark:text-white p-5 mx-auto max-w-fit" data-aos="zoom-y-out" data-aos-delay="150">
-                <button onClick={() => { window.location.href = "https://suvanbanerjee.github.io/OVOS-skills-store/" }}
+                {/* <button onClick={() => { window.location.href = "https://suvanbanerjee.github.io/OVOS-skills-store/" }}
                 className="text-center text-xl font-extrabold relative underline underline-offset-4 decoration-[#fb4c4c] decoration-4" data-aos="zoom-y-out" data-aos-delay="150" id="message">
                     🎉 OpenVoiceOS Skill Store is now in beta!
-                </button>
+                </button> */}
+                <a href="/press" className="text-center text-xl font-extrabold relative underline underline-offset-4 decoration-[#fb4c4c] decoration-4" data-aos="zoom-y-out" data-aos-delay="150">
+                    🎉 OpenVoiceOS Foundation is now live! Click here for the press release
+                </a>
             </div>
             {/* {showDialog && (
                 <div className="fixed inset-0 flex items-center justify-center z-50">
