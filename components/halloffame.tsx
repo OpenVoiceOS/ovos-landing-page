@@ -38,7 +38,14 @@ const teamMembers: TeamMember[] = [
         handle: 'suvanbanerjee',
         image: 'https://avatars.githubusercontent.com/u/104707806',
         country: 'India 🇮🇳',
+    },
+    {
+        name: 'Parker Seaman',
+        handle: '5trongthany',
+        image: 'https://avatars.githubusercontent.com/u/65565784',
+        country: 'USA 🇺🇸',
     }
+
 ];
 
 const Halloffame: React.FC = () => {

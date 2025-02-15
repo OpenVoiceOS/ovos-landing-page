@@ -5,13 +5,14 @@ import { AuroraText } from "@/components/magicui/aurora-text";
 import { TextReveal } from "@/components/magicui/text-reveal";
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { BlurFade } from "@/components/magicui/blur-fade";
-import { useTheme } from "next-themes";
 import { MagicCard } from "@/components/magicui/magic-card";
 import { Loader2 } from "lucide-react";
+import core3 from '@/public/images/core3.jpeg';
 import {
   Card,
   CardContent,
 } from "@/components/ui/card"
+import Image from 'next/image';
 
 const PageLoader = () => {
   return (
@@ -25,8 +26,21 @@ const PageLoader = () => {
 };
 
 export default function Press() {
-  const { theme } = useTheme();
   const [isLoading, setIsLoading] = useState(true);
+  const [lastUpdated, setLastUpdated] = useState<string | null>(null);
+
+  useEffect(() => {
+    fetch("https://api.github.com/repos/OpenVoiceOS/ovos-landing-page/commits?path=/components/press.tsx")
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.length > 0) {
+          const lastCommitDate = new Date(data[0].commit.committer.date);
+          console.log("Last commit date:", lastCommitDate);
+          setLastUpdated(lastCommitDate.toUTCString());
+        }
+      })
+      .catch((err) => console.error("Error fetching last modified date:", err));
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -53,8 +67,16 @@ export default function Press() {
             (Re)Enabling Open source Privacy and customization in Voice Assistants & Technology
           </TextAnimate>
           <BlurFade delay={1.2} inView>
+            
+            <div className="flex items-center mb-6">
+              <Image src={core3} alt="Core Image" className="w-12 h-12 rounded-full mr-6" />
+              <div>
+              <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">Peter Steenbergen</h3>
+              <span className="text-sm text-gray-600 dark:text-gray-400">{lastUpdated}</span>
+              </div>
+            </div>
             <p className="mb-6 text-gray-700 dark:text-gray-300">
-              We are very pleased to finally announce its official registration and launch of the OVOS Foundation, a non-profit organization dedicated to advancing open-source voice assistant technology. This milestone comes after overcoming numerous challenges posed by the stricter regulatory landscape introduced within the Netherlands for foundations after the worldwide Corona era. The newly established Foundation is committed to advancing the development and deployment of open-source voice operating systems while ensuring privacy, security, and user-centric innovation.
+              We are very pleased to finally announce the official registration and launch of the OVOS Foundation, a non-profit organization dedicated to advancing open-source voice assistant technology. This milestone comes after overcoming numerous challenges posed by the stricter regulatory landscape introduced within the Netherlands for foundations after the worldwide Corona era. Although the foundation was established in August 2024, it took another half year to arrange all other legal obligations and secure a worldwide accessible bank account under non-profit regulations. Despite these challenges, the newly established Foundation is committed to advancing the development and deployment of open-source voice operating systems while ensuring privacy, security, and user-centric innovation.
             </p>
 
             <MagicCard className="p-6 mb-8 shadow-sm" >
@@ -140,17 +162,17 @@ export default function Press() {
             <MagicCard className="p-6 mb-8 shadow-sm" >
               <h2 className="text-3xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Looking Ahead</h2>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                The establishment of the OVOS Foundation is just the beginning. We are excited about the future and the possibilities that lie ahead. Together, we can build a voice assistant platform that respects user privacy, fosters innovation, and empowers everyone to take control of their technology. A little while back we already announced the pre-release of 0.0.8-beta which will soon get out of beta and into a stable release.
+              The establishment of the OVOS Foundation is just the beginning. We are excited about the future and the possibilities that lie ahead. Together, we can build a voice assistant platform that respects user privacy, fosters innovation, and empowers everyone to take control of their technology. In the second half of last year, we launched ovos-core 0.0.8. This was the very first stable release under the OpenVoiceOS project umbrella, maintaining Mycroft backwards compatibility while fully integrating all OVOS plugins and skills across most components.
               </p>
               <p className="text-gray-700 dark:text-gray-300 mb-4">
-                This will be the very first stable release under the OpenVoiceOS project umbrella which still maintains Mycroft backwards compatibility but is also our first release that fully integrates all OVOS plugins and skills across most if not all components.
+              In the meantime, we have adopted semantic version control, allowing us to release future versions as rolling releases. For the upcoming releases, we have some exciting features being developed and mostly already in progress. Stay tuned for updates and announcements as we embark on this journey.
               </p>
               <p className="text-gray-700 dark:text-gray-300">
-                For the next version we have some very nice features being worked out and mostly already being worked on, so stay tuned for updates and announcements as we embark on this journey. Thank you for your support, and welcome to the OVOS Foundation!
+              Thank you for your support, and welcome to the OVOS Foundation!
               </p>
             </MagicCard>
 
-            <Card className="mt-12 bg-gray-50 dark:bg-gray-800">
+            <Card className="mt-12 bg-gray-50 dark:bg-gray-800 pb-8">
               <CardContent className="p-6">
                 <div className="flex flex-col md:flex-row items-start md:items-center gap-4">
                   <div className="flex-grow">
@@ -169,6 +191,18 @@ export default function Press() {
                 </div>
               </CardContent>
             </Card>
+            <div className="mt-12 border-t border-gray-200 dark:border-gray-700 pt-8">
+              <div className="flex items-center">
+              <Image src={core3} alt="Core Image" className="w-12 h-12 rounded-full mr-4" />
+              <div>
+                <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200">Peter Steenbergen</h3>
+                <span className="text-sm text-gray-600 dark:text-gray-400">{lastUpdated}</span>
+              </div>
+              </div>
+              <p className="text-gray-700 dark:text-gray-300 mt-4 text-sm">
+              Peter Steenbergen, co-founder of the OVOS Foundation, is a passionate advocate for open-source voice technology and privacy-focused AI. With a strong background in Linux OS development, he played a key role in the evolution of OpenVoiceOS, building on his work with MycroftOS. Dedicated to advancing independent voice assistants, Peter continues to drive innovation in the OpenVoiceOS community.
+              </p>
+            </div>
           </BlurFade>
         </article>
       </section>
