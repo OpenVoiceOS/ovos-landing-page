@@ -1,0 +1,173 @@
+{
+  "version": "v1.0.0",
+  "entity": {
+    "type": "organisation",
+    "role": "steward",
+    "name": "The OVOS Foundation (Stichting OVOS) - OpenVoiceOS",
+    "email": "info@openvoiceos.org",
+    "description": "OpenVoiceOS is a community-driven, open-source voice AI platform dedicated to creating customizable voice-controlled interfaces with a focus on privacy and security.",
+    "webpageUrl": {
+      "url": "https://www.openvoiceos.org/"
+    }
+  },
+  "projects": [
+    {
+      "guid": "openvoiceos",
+      "name": "OpenVoiceOS",
+      "description": "The foundational software of OpenVoiceOS, enabling voice AI capabilities across various devices.",
+      "webpageUrl": {
+        "url": "https://www.openvoiceos.org/"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/OpenVoiceOS/ovos-releases"
+      },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["voice-assistant", "open-source", "AI", "privacy", "cross-platform"]
+    },
+    {
+      "guid": "ovos-installer",
+      "name": "OVOS Installer",
+      "description": "An intuitive installer for OpenVoiceOS, facilitating easy setup and deployment.",
+      "webpageUrl": {
+        "url": "https://www.openvoiceos.org/"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/OpenVoiceOS/ovos-installer"
+      },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["installer", "setup", "automation", "open-source"]
+    },
+    {
+      "guid": "ovos-buildroot",
+      "name": "OVOS Buildroot",
+      "description": "A minimalistic Linux OS designed to host the OpenVoiceOS voice assistant on embedded systems.",
+      "webpageUrl": {
+        "url": "https://www.openvoiceos.org/"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/OpenVoiceOS/ovos-buildroot"
+      },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["buildroot", "embedded-systems", "linux", "open-source"]
+    },
+    {
+      "guid": "raspovos",
+      "name": "RaspOVOS",
+      "description": "A specialized Raspberry Pi version of OpenVoiceOS, optimized for lightweight and efficient performance on embedded hardware.",
+      "webpageUrl": {
+        "url": "https://github.com/OpenVoiceOS/raspOVOS"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/OpenVoiceOS/raspOVOS"
+      },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["raspberry-pi", "embedded", "voice-assistant", "lightweight"]
+    },
+    {
+      "guid": "ovos-persona",
+      "name": "OVOS Persona",
+      "description": "A modular and customizable persona system for OpenVoiceOS, allowing users to personalize voice interactions with unique assistant identities.",
+      "webpageUrl": {
+        "url": "https://github.com/OpenVoiceOS/ovos-persona"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/OpenVoiceOS/ovos-persona"
+      },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["AI", "voice-personalization", "open-source", "assistant"]
+    },
+    {
+      "guid": "ovos-docker",
+      "name": "OVOS Docker",
+      "description": "A Docker-based deployment system for OpenVoiceOS, enabling easier containerization, scaling, and multi-platform support.",
+      "webpageUrl": {
+        "url": "https://github.com/OpenVoiceOS/ovos-docker"
+      },
+      "repositoryUrl": {
+        "url": "https://github.com/OpenVoiceOS/ovos-docker"
+      },
+      "licenses": ["spdx:Apache-2.0"],
+      "tags": ["docker", "containerization", "scalability", "open-source"]
+    }
+  ],
+  "funding": {
+    "channels": [
+      {
+        "guid": "paypal",
+        "type": "payment-provider",
+        "service": "PayPal",
+        "url": "https://www.paypal.com/paypalme/openvoiceos"
+      },
+      {
+        "guid": "patreon",
+        "type": "crowdfunding",
+        "service": "Patreon",
+        "url": "https://www.patreon.com/openvoiceos"
+      },
+      {
+        "guid": "liberapay",
+        "type": "payment-provider",
+        "service": "Liberapay",
+        "url": "https://liberapay.com/OpenVoiceOS/"
+      },
+      {
+        "guid": "github-sponsors",
+        "type": "payment-provider",
+        "service": "GitHub Sponsors",
+        "url": "https://github.com/sponsors/OpenVoiceOS"
+      }
+    ],
+    "currencies": ["EUR", "USD"],
+    "regions": ["worldwide"]
+  },
+  "plans": [
+    {
+      "guid": "sustainable-development",
+      "name": "Ensure Sustainable Open Development",
+      "description": "Maintain and expand OpenVoiceOS as a fully open-source project by securing sustainable funding for hosting, development, and long-term maintenance.",
+      "goal": {
+        "currency": "EUR",
+        "amount": 10000
+      }
+    },
+    {
+      "guid": "device-integration",
+      "name": "Expand Device Compatibility",
+      "description": "Support additional hardware platforms, including Raspberry Pi, embedded Linux devices, and smart home integrations.",
+      "goal": {
+        "currency": "EUR",
+        "amount": 7500
+      }
+    },
+    {
+      "guid": "privacy-enhancements",
+      "name": "Improve Privacy and Offline Capabilities",
+      "description": "Enhance privacy-focused features such as offline voice processing, self-hosted AI models, and local speech-to-text processing.",
+      "goal": {
+        "currency": "EUR",
+        "amount": 15000
+      }
+    },
+    {
+      "guid": "developer-support",
+      "name": "Fund Developer Bounties and Grants",
+      "description": "Create a bounty program to incentivize community developers to contribute features, bug fixes, and improvements.",
+      "goal": {
+        "currency": "EUR",
+        "amount": 5000
+      }
+    },
+    {
+      "guid": "ovos-persona-development",
+      "name": "Fund OVOS Persona Development",
+      "description": "Support the development of OVOS Persona, enabling users to create and customize unique AI assistant identities with enhanced voice personalization.",
+      "webpageUrl": {
+        "url": "https://github.com/OpenVoiceOS/ovos-persona"
+      },
+      "goal": {
+        "currency": "EUR",
+        "amount": 10000
+      }
+    }
+  ]
+}
