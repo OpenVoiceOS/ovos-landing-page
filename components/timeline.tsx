@@ -106,6 +106,13 @@ export default function Timeline() {
             date: 'November 2024',
             description: 'OpenVoiceOS get\'s out of beta and is ready for the masses.',
             link: 'https://community.openconversational.ai/t/openvoiceos-0-0-8-qa-process-begins-now/15372'
+        },
+        {
+            title: 'OpenVoice Foundation Established',
+            date: 'Febuary 2025',
+            description: 'OpenVoice Foundation is established as a non-profit foundation legal entity.',
+            link: '/press'
+
         }
     ];
 
