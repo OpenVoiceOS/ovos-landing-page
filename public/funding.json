@@ -2,7 +2,7 @@
   "version": "v1.0.0",
   "entity": {
     "type": "organisation",
-    "role": "steward",
+    "role": "owner",
     "name": "The OVOS Foundation (Stichting OVOS) - OpenVoiceOS",
     "email": "info@openvoiceos.org",
     "description": "OpenVoiceOS is a community-driven, open-source voice AI platform dedicated to creating customizable voice-controlled interfaces with a focus on privacy and security.",
@@ -16,10 +16,12 @@
       "name": "OpenVoiceOS",
       "description": "The foundational software of OpenVoiceOS, enabling voice AI capabilities across various devices.",
       "webpageUrl": {
-        "url": "https://www.openvoiceos.org/"
+        "url": "https://www.openvoiceos.org/",
+		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-releases"
+        "url": "https://github.com/OpenVoiceOS/ovos-releases",
+		"wellKnown": "https://github.com/OpenVoiceOS/ovos-releases/-/raw/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["voice-assistant", "open-source", "AI", "privacy", "cross-platform"]
@@ -29,10 +31,12 @@
       "name": "OVOS Installer",
       "description": "An intuitive installer for OpenVoiceOS, facilitating easy setup and deployment.",
       "webpageUrl": {
-        "url": "https://www.openvoiceos.org/"
+        "url": "https://www.openvoiceos.org/",
+		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-installer"
+        "url": "https://github.com/OpenVoiceOS/ovos-installer",
+		"wellKnown": "https://github.com/OpenVoiceOS/ovos-installer/-/raw/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["installer", "setup", "automation", "open-source"]
@@ -42,10 +46,12 @@
       "name": "OVOS Buildroot",
       "description": "A minimalistic Linux OS designed to host the OpenVoiceOS voice assistant on embedded systems.",
       "webpageUrl": {
-        "url": "https://www.openvoiceos.org/"
+        "url": "https://www.openvoiceos.org/",
+		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-buildroot"
+        "url": "https://github.com/OpenVoiceOS/ovos-buildroot",
+		"wellKnown": "https://github.com/OpenVoiceOS/ovos-buildroot/-/raw/develop/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["buildroot", "embedded-systems", "linux", "open-source"]
@@ -55,10 +61,12 @@
       "name": "RaspOVOS",
       "description": "A specialized Raspberry Pi version of OpenVoiceOS, optimized for lightweight and efficient performance on embedded hardware.",
       "webpageUrl": {
-        "url": "https://github.com/OpenVoiceOS/raspOVOS"
+        "url": "https://www.openvoiceos.org/",
+		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/raspOVOS"
+        "url": "https://github.com/OpenVoiceOS/raspOVOS",
+		"wellKnown": "https://github.com/OpenVoiceOS/raspOVOS/-/raw/dev/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["raspberry-pi", "embedded", "voice-assistant", "lightweight"]
@@ -68,10 +76,12 @@
       "name": "OVOS Persona",
       "description": "A modular and customizable persona system for OpenVoiceOS, allowing users to personalize voice interactions with unique assistant identities.",
       "webpageUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-persona"
+        "url": "https://www.openvoiceos.org/",
+		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-persona"
+        "url": "https://github.com/OpenVoiceOS/ovos-persona",
+		"wellKnown": "https://github.com/OpenVoiceOS/ovos-persona/-/raw/dev/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["AI", "voice-personalization", "open-source", "assistant"]
@@ -81,7 +91,8 @@
       "name": "OVOS Docker",
       "description": "A Docker-based deployment system for OpenVoiceOS, enabling easier containerization, scaling, and multi-platform support.",
       "webpageUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-docker"
+        "url": "https://www.openvoiceos.org/",
+		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
         "url": "https://github.com/OpenVoiceOS/ovos-docker"
