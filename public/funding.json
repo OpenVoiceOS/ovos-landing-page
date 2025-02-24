@@ -135,50 +135,53 @@
   "plans": [
     {
       "guid": "sustainable-development",
+	  "status": "active",
       "name": "Ensure Sustainable Open Development",
       "description": "Maintain and expand OpenVoiceOS as a fully open-source project by securing sustainable funding for hosting, development, and long-term maintenance.",
-      "goal": {
-        "currency": "EUR",
-        "amount": 10000
+	  "amount": 0
+      "currency": "EUR",
+      "frequency": "other",
+	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       }
     },
     {
       "guid": "device-integration",
       "name": "Expand Device Compatibility",
       "description": "Support additional hardware platforms, including Raspberry Pi, embedded Linux devices, and smart home integrations.",
-      "goal": {
-        "currency": "EUR",
-        "amount": 7500
+      "amount": 0
+      "currency": "EUR",
+      "frequency": "other",
+	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       }
     },
     {
       "guid": "privacy-enhancements",
       "name": "Improve Privacy and Offline Capabilities",
       "description": "Enhance privacy-focused features such as offline voice processing, self-hosted AI models, and local speech-to-text processing.",
-      "goal": {
-        "currency": "EUR",
-        "amount": 15000
+      "amount": 0
+      "currency": "EUR",
+      "frequency": "other",
+	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       }
     },
     {
       "guid": "developer-support",
       "name": "Fund Developer Bounties and Grants",
       "description": "Create a bounty program to incentivize community developers to contribute features, bug fixes, and improvements.",
-      "goal": {
-        "currency": "EUR",
-        "amount": 5000
+      "amount": 0
+      "currency": "EUR",
+      "frequency": "other",
+	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       }
     },
     {
       "guid": "ovos-persona-development",
       "name": "Fund OVOS Persona Development",
       "description": "Support the development of OVOS Persona, enabling users to create and customize unique AI assistant identities with enhanced voice personalization.",
-      "webpageUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-persona"
-      },
-      "goal": {
-        "currency": "EUR",
-        "amount": 10000
+      "amount": 0
+      "currency": "EUR",
+      "frequency": "other",
+	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       }
     }
   ]
