@@ -95,7 +95,8 @@
 		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-docker"
+        "url": "https://github.com/OpenVoiceOS/ovos-docker",
+		"wellKnown": "https://github.com/OpenVoiceOS/ovos-docker/-/raw/dev/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["docker", "containerization", "scalability", "open-source"]
