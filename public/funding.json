@@ -112,7 +112,7 @@
       },
       {
         "guid": "patreon",
-        "type": "crowdfunding",
+        "type": "payment-provider",
         "service": "Patreon",
         "url": "https://www.patreon.com/openvoiceos"
       },
