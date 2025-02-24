@@ -142,7 +142,6 @@
       "currency": "EUR",
       "frequency": "other",
 	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
-      }
     },
     {
       "guid": "device-integration",
@@ -152,7 +151,6 @@
       "currency": "EUR",
       "frequency": "other",
 	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
-      }
     },
     {
       "guid": "privacy-enhancements",
@@ -162,7 +160,6 @@
       "currency": "EUR",
       "frequency": "other",
 	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
-      }
     },
     {
       "guid": "developer-support",
@@ -172,7 +169,6 @@
       "currency": "EUR",
       "frequency": "other",
 	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
-      }
     },
     {
       "guid": "ovos-persona-development",
@@ -182,7 +178,6 @@
       "currency": "EUR",
       "frequency": "other",
 	  "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
-      }
     }
   ]
 }
