@@ -21,7 +21,7 @@
       },
       "repositoryUrl": {
         "url": "https://github.com/OpenVoiceOS/ovos-releases",
-		"wellKnown": "https://github.com/OpenVoiceOS/ovos-releases/-/raw/main/.well-known/funding-manifest-urls"
+		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-releases/refs/heads/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["voice-assistant", "open-source", "AI", "privacy", "cross-platform"]
@@ -36,7 +36,7 @@
       },
       "repositoryUrl": {
         "url": "https://github.com/OpenVoiceOS/ovos-installer",
-		"wellKnown": "https://github.com/OpenVoiceOS/ovos-installer/-/raw/main/.well-known/funding-manifest-urls"
+		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/refs/heads/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["installer", "setup", "automation", "open-source"]
@@ -51,25 +51,10 @@
       },
       "repositoryUrl": {
         "url": "https://github.com/OpenVoiceOS/ovos-buildroot",
-		"wellKnown": "https://github.com/OpenVoiceOS/ovos-buildroot/-/raw/develop/.well-known/funding-manifest-urls"
+		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-buildroot/refs/heads/develop/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["buildroot", "embedded-systems", "linux", "open-source"]
-    },
-    {
-      "guid": "raspovos",
-      "name": "RaspOVOS",
-      "description": "A specialized Raspberry Pi version of OpenVoiceOS, optimized for lightweight and efficient performance on embedded hardware.",
-      "webpageUrl": {
-        "url": "https://www.openvoiceos.org/",
-		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
-      },
-      "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/raspOVOS",
-		"wellKnown": "https://github.com/OpenVoiceOS/raspOVOS/-/raw/dev/.well-known/funding-manifest-urls"
-      },
-      "licenses": ["spdx:Apache-2.0"],
-      "tags": ["raspberry-pi", "embedded", "voice-assistant", "lightweight"]
     },
     {
       "guid": "ovos-persona",
@@ -81,7 +66,7 @@
       },
       "repositoryUrl": {
         "url": "https://github.com/OpenVoiceOS/ovos-persona",
-		"wellKnown": "https://github.com/OpenVoiceOS/ovos-persona/-/raw/dev/.well-known/funding-manifest-urls"
+		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-persona/refs/heads/dev/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["AI", "voice-personalization", "open-source", "assistant"]
@@ -96,7 +81,7 @@
       },
       "repositoryUrl": {
         "url": "https://github.com/OpenVoiceOS/ovos-docker",
-		"wellKnown": "https://github.com/OpenVoiceOS/ovos-docker/-/raw/dev/.well-known/funding-manifest-urls"
+		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-docker/refs/heads/dev/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["docker", "containerization", "scalability", "open-source"]
