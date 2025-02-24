@@ -142,6 +142,7 @@
       },
       {
         "guid": "device-integration",
+		"status": "active",
         "name": "Expand Device Compatibility",
         "description": "Support additional hardware platforms, including Raspberry Pi, embedded Linux devices, and smart home integrations.",
         "amount": 0,
@@ -151,6 +152,7 @@
       },
       {
         "guid": "privacy-enhancements",
+		"status": "active",
         "name": "Improve Privacy and Offline Capabilities",
         "description": "Enhance privacy-focused features such as offline voice processing, self-hosted AI models, and local speech-to-text processing.",
         "amount": 0,
@@ -160,6 +162,7 @@
       },
       {
         "guid": "developer-support",
+		"status": "inactive",
         "name": "Fund Developer Bounties and Grants",
         "description": "Create a bounty program to incentivize community developers to contribute features, bug fixes, and improvements.",
         "amount": 0,
@@ -169,6 +172,7 @@
       },
       {
         "guid": "ovos-persona-development",
+		"status": "active",
         "name": "Fund OVOS Persona Development",
         "description": "Support the development of OVOS Persona, enabling users to create and customize unique AI assistant identities with enhanced voice personalization.",
         "amount": 0,
