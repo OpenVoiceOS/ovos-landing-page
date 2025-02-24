@@ -7,111 +7,56 @@
     "email": "info@openvoiceos.org",
     "description": "OpenVoiceOS is a community-driven, open-source voice AI platform dedicated to creating customizable voice-controlled interfaces with a focus on privacy and security.",
     "webpageUrl": {
-      "url": "https://www.openvoiceos.org/"
+      "url": "https://www.openvoiceos.org/",
+	  "wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
     }
   },
   "projects": [
     {
       "guid": "openvoiceos",
       "name": "OpenVoiceOS",
-      "description": "The foundational software of OpenVoiceOS, enabling voice AI capabilities across various devices.",
+      "description": "OpenVoiceOS provides an open-source alternative to proprietary voice assistant platforms such as platforms offered by major companies like Amazon, Google, and Apple. ",
       "webpageUrl": {
         "url": "https://www.openvoiceos.org/",
 		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-releases",
-		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-releases/refs/heads/main/.well-known/funding-manifest-urls"
+        "url": "https://github.com/OpenVoiceOS"
       },
       "licenses": ["spdx:Apache-2.0"],
       "tags": ["voice-assistant", "open-source", "AI", "privacy", "cross-platform"]
-    },
-    {
-      "guid": "ovos-installer",
-      "name": "OVOS Installer",
-      "description": "An intuitive installer for OpenVoiceOS, facilitating easy setup and deployment.",
-      "webpageUrl": {
-        "url": "https://www.openvoiceos.org/",
-		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
-      },
-      "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-installer",
-		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/refs/heads/main/.well-known/funding-manifest-urls"
-      },
-      "licenses": ["spdx:Apache-2.0"],
-      "tags": ["installer", "setup", "automation", "open-source"]
-    },
-    {
-      "guid": "ovos-buildroot",
-      "name": "OVOS Buildroot",
-      "description": "A minimalistic Linux OS designed to host the OpenVoiceOS voice assistant on embedded systems.",
-      "webpageUrl": {
-        "url": "https://www.openvoiceos.org/",
-		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
-      },
-      "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-buildroot",
-		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-buildroot/refs/heads/develop/.well-known/funding-manifest-urls"
-      },
-      "licenses": ["spdx:Apache-2.0"],
-      "tags": ["buildroot", "embedded-systems", "linux", "open-source"]
-    },
-    {
-      "guid": "ovos-persona",
-      "name": "OVOS Persona",
-      "description": "A modular and customizable persona system for OpenVoiceOS, allowing users to personalize voice interactions with unique assistant identities.",
-      "webpageUrl": {
-        "url": "https://www.openvoiceos.org/",
-		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
-      },
-      "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-persona",
-		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-persona/refs/heads/dev/.well-known/funding-manifest-urls"
-      },
-      "licenses": ["spdx:Apache-2.0"],
-      "tags": ["AI", "voice-personalization", "open-source", "assistant"]
-    },
-    {
-      "guid": "ovos-docker",
-      "name": "OVOS Docker",
-      "description": "A Docker-based deployment system for OpenVoiceOS, enabling easier containerization, scaling, and multi-platform support.",
-      "webpageUrl": {
-        "url": "https://www.openvoiceos.org/",
-		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
-      },
-      "repositoryUrl": {
-        "url": "https://github.com/OpenVoiceOS/ovos-docker",
-		"wellKnown": "https://raw.githubusercontent.com/OpenVoiceOS/ovos-docker/refs/heads/dev/.well-known/funding-manifest-urls"
-      },
-      "licenses": ["spdx:Apache-2.0"],
-      "tags": ["docker", "containerization", "scalability", "open-source"]
     }
   ],
   "funding": {
     "channels": [
       {
+        "guid": "bankaccout",
+        "type": "bank",
+        "description": "We accept direct bank transfers. Please email for details."
+      },
+	  {
         "guid": "paypal",
         "type": "payment-provider",
-        "service": "PayPal",
-        "url": "https://www.paypal.com/paypalme/openvoiceos"
+        "address": "https://www.paypal.com/paypalme/openvoiceos",
+		"description": "Payments by direct PayPal transfers."
       },
       {
         "guid": "patreon",
         "type": "payment-provider",
-        "service": "Patreon",
-        "url": "https://www.patreon.com/openvoiceos"
+        "address": "https://www.patreon.com/openvoiceos",
+		"description": "Payments up to €5000,- per month can be made via Patreon."
       },
       {
         "guid": "liberapay",
         "type": "payment-provider",
-        "service": "Liberapay",
-        "url": "https://liberapay.com/OpenVoiceOS/"
+        "address": "https://liberapay.com/OpenVoiceOS-Foundation/",
+		"description": "We accept payments through liberapay."
       },
       {
         "guid": "github-sponsors",
         "type": "payment-provider",
-        "service": "GitHub Sponsors",
-        "url": "https://github.com/sponsors/OpenVoiceOS"
+        "address": "https://github.com/sponsors/OpenVoiceOS",
+		"description": "Payments up to €5000,- per month or as one time can be made via Github sponsors."
       }
     ],
     "plans": [
