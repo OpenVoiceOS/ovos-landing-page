@@ -1,31 +1,41 @@
-'use client';
+"use client";
 
 import React from "react";
 import Link from "next/link";
 
 export default function Release() {
-    const [showDialog, setShowDialog] = React.useState(false);
+  const [showDialog, setShowDialog] = React.useState(false);
 
-    const handleToggleDialog = () => {
-        setShowDialog(!showDialog);
-    }
+  const handleToggleDialog = () => {
+    setShowDialog(!showDialog);
+  };
 
-    const handleCloseDialog = () => {
-        setShowDialog(false);
-    }
+  const handleCloseDialog = () => {
+    setShowDialog(false);
+  };
 
-    return (
-        <div className="relative mx-auto items-center justify-center p-8">
-            <div className="dark:text-white p-5 mx-auto max-w-fit" data-aos="zoom-y-out" data-aos-delay="150">
-                {/* <button onClick={() => { window.location.href = "https://suvanbanerjee.github.io/OVOS-skills-store/" }}
+  return (
+    <div className="relative mx-auto items-center justify-center p-8">
+      <div
+        className="dark:text-white p-5 mx-auto max-w-fit"
+        data-aos="zoom-y-out"
+        data-aos-delay="150"
+      >
+        {/* <button onClick={() => { window.location.href = "https://suvanbanerjee.github.io/OVOS-skills-store/" }}
                 className="text-center text-xl font-extrabold relative underline underline-offset-4 decoration-[#fb4c4c] decoration-4" data-aos="zoom-y-out" data-aos-delay="150" id="message">
                     🎉 OpenVoiceOS Skill Store is now in beta!
                 </button> */}
-                <a href="/press" className="text-center text-xl font-extrabold relative underline underline-offset-4 decoration-[#fb4c4c] decoration-4" data-aos="zoom-y-out" data-aos-delay="150">
-                    🎉 OpenVoiceOS Foundation is now live! Click here for the press release
-                </a>
-            </div>
-            {/* {showDialog && (
+        <a
+          href="/press"
+          className="text-center text-xl font-extrabold relative underline underline-offset-4 decoration-[#fb4c4c] decoration-4"
+          data-aos="zoom-y-out"
+          data-aos-delay="150"
+        >
+          🎉 OpenVoiceOS Foundation is now live! Click here for the press
+          release
+        </a>
+      </div>
+      {/* {showDialog && (
                 <div className="fixed inset-0 flex items-center justify-center z-50">
                     <div className="bg-white dark:bg-black dark:text-white p-16 rounded-lg shadow-lg">
                         <h2 className="text-xl md:text-xl font-bold leading-tighter tracking-tighter mb-4">OVOS v0.0.8 Pre-Release</h2>
@@ -43,6 +53,6 @@ export default function Release() {
                     </div>
                 </div>
             )} */}
-        </div>
-    )
+    </div>
+  );
 }

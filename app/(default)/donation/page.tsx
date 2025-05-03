@@ -1,14 +1,14 @@
 export const metadata = {
-    title: 'Donations',
-    description: 'How to donate to the project',
-}
+  title: "Donations",
+  description: "How to donate to the project",
+};
 
-import Donations from '@/components/donating'
+import Donations from "@/components/donating";
 
-    export default function Donate() {
-    return (
-        <>
-        <Donations />
-        </>
-    )
+export default function Donate() {
+  return (
+    <>
+      <Donations />
+    </>
+  );
 }

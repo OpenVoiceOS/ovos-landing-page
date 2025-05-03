@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faCircleHalfStroke, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 export function ThemeSwitcher() {
   const [mounted, setMounted] = useState(false);
@@ -41,9 +41,13 @@ export function ThemeSwitcher() {
     <div className="text-center my-4">
       <button
         onClick={toggleTheme}
-        className="flex items-center justify-center w-10 h-10 bg-black dark:bg-white text-gray-200 dark:text-gray-900 rounded-xl transition-all duration-300"
+        className="flex items-center justify-center rounded-xl transition-all duration-300"
       >
-        <FontAwesomeIcon icon={resolvedTheme === "dark" ? faSun : faMoon} size="lg" />
+        <FontAwesomeIcon
+          className="text-black dark:text-white"
+          icon={resolvedTheme === "dark" ? faCircleHalfStroke : faMoon}
+          size="lg"
+        />
       </button>
     </div>
   );

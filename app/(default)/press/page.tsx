@@ -1,14 +1,14 @@
 export const metadata = {
-    title: 'Press Release',
-    description: 'Press Release for OpenVoiceOS',
-}
+  title: "Press Release",
+  description: "Press Release for OpenVoiceOS",
+};
 
-import Press from '@/components/press'
+import Press from "@/components/press";
 
-    export default function Pressrelease() {
-    return (
-        <>
-        <Press />
-        </>
-    )
+export default function Pressrelease() {
+  return (
+    <>
+      <Press />
+    </>
+  );
 }

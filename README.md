@@ -7,20 +7,22 @@ Welcome to Open Voice OS, community-driven, open-source AI voice platform! 🎉�
 To run the project locally
 
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/OpenVoiceOS/ovos-landing-page.git
-    cd ovos-landing-page
-    ```
+
+   ```bash
+   git clone https://github.com/OpenVoiceOS/ovos-landing-page.git
+   cd ovos-landing-page
+   ```
 
 2. Install the dependencies:
-    ```bash
-    npm install
-    ```
+
+   ```bash
+   npm install
+   ```
 
 3. Run the development server:
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 
 Note: When cloning the repository, you can use the `depth=1` flag to avoid downloading the entire history. 🌳
 

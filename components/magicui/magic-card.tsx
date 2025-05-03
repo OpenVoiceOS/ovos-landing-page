@@ -56,7 +56,7 @@ export function MagicCard({
       ref={cardRef}
       className={cn(
         "group relative flex size-full rounded-xl bg-white dark:bg-stone-950",
-        className
+        className,
       )}
     >
       <div className="relative z-30 w-full text-stone-950 transition-colors duration-150 dark:text-stone-200">

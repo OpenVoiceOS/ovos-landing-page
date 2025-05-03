@@ -1,11 +1,14 @@
-import Image from 'next/image';
-import core1 from '@/public/images/core1.jpeg';
-import core2 from '@/public/images/core2.jpeg';
-import core3 from '@/public/images/core3.jpeg';
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faCommentAlt, faLocationArrow } from '@fortawesome/free-solid-svg-icons';
+import Image from "next/image";
+import core1 from "@/public/images/core1.jpeg";
+import core2 from "@/public/images/core2.jpeg";
+import core3 from "@/public/images/core3.jpeg";
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import {
+  faCommentAlt,
+  faLocationArrow,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Teams() {
   return (
@@ -17,7 +20,8 @@ export default function Teams() {
               Say Hello to Our Team
             </h2>
             <p className="text-gray-600 dark:text-gray-300 text-xl lg:w-8/12 lg:mx-auto">
-              Open Voice OS is maintained by a small team of developers and lots of contributors.
+              Open Voice OS is maintained by a small team of developers and lots
+              of contributors.
             </p>
           </div>
           <div className="grid gap-12 items-center md:grid-cols-3">
@@ -30,20 +34,43 @@ export default function Teams() {
                 height="805"
               />
               <div>
-                <h4 className="text-2xl font-bold dark:text-white">Daniel McKnight</h4>
+                <h4 className="text-2xl font-bold dark:text-white">
+                  Daniel McKnight
+                </h4>
                 <span className="block text-sm text-gray-500 dark:text-gray-400">
                   <FontAwesomeIcon icon={faLocationArrow} /> United States 🇺🇸
                 </span>
               </div>
               <div className="flex justify-center space-x-4">
-                <a href="https://www.linkedin.com/in/daniel-mcknight" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedin} className="text-blue-600 dark:text-blue-400 text-xl" />
+                <a
+                  href="https://www.linkedin.com/in/daniel-mcknight"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="text-blue-600 dark:text-blue-400 text-xl"
+                  />
                 </a>
-                <a href="https://matrix.to/#/@daniel:matrix.org" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faCommentAlt} className="text-green-600 dark:text-green-400 text-xl" />
+                <a
+                  href="https://matrix.to/#/@daniel:matrix.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faCommentAlt}
+                    className="text-green-600 dark:text-green-400 text-xl"
+                  />
                 </a>
-                <a href="https://github.com/NeonDaniel" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="text-xl dark:text-gray-300" />
+                <a
+                  href="https://github.com/NeonDaniel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-xl dark:text-gray-300"
+                  />
                 </a>
               </div>
             </div>
@@ -56,20 +83,43 @@ export default function Teams() {
                 height="805"
               />
               <div>
-                <h4 className="text-2xl font-bold dark:text-white">Casimiro Ferreira</h4>
+                <h4 className="text-2xl font-bold dark:text-white">
+                  Casimiro Ferreira
+                </h4>
                 <span className="block text-sm text-gray-500 dark:text-gray-400">
                   <FontAwesomeIcon icon={faLocationArrow} /> Portugal 🇵🇹
                 </span>
               </div>
               <div className="flex justify-center space-x-4">
-                <a href="https://www.linkedin.com/in/casimiro-ferreira" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedin} className="text-blue-600 dark:text-blue-400 text-xl" />
+                <a
+                  href="https://www.linkedin.com/in/casimiro-ferreira"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="text-blue-600 dark:text-blue-400 text-xl"
+                  />
                 </a>
-                <a href="https://matrix.to/#/@casimiro:matrix.org" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faCommentAlt} className="text-green-600 dark:text-green-400 text-xl" />
+                <a
+                  href="https://matrix.to/#/@casimiro:matrix.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faCommentAlt}
+                    className="text-green-600 dark:text-green-400 text-xl"
+                  />
                 </a>
-                <a href="https://github.com/JarbasAl" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="text-xl dark:text-gray-300" />
+                <a
+                  href="https://github.com/JarbasAl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-xl dark:text-gray-300"
+                  />
                 </a>
               </div>
             </div>
@@ -83,20 +133,43 @@ export default function Teams() {
                 height="805"
               />
               <div>
-                <h4 className="text-2xl font-bold dark:text-white">Peter Steenbergen</h4>
+                <h4 className="text-2xl font-bold dark:text-white">
+                  Peter Steenbergen
+                </h4>
                 <span className="block text-sm text-gray-500 dark:text-gray-400">
                   <FontAwesomeIcon icon={faLocationArrow} /> Netherlands 🇳🇱
                 </span>
               </div>
               <div className="flex justify-center space-x-4">
-                <a href="https://www.linkedin.com/in/peter-steenbergen" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faLinkedin} className="text-blue-600 dark:text-blue-400 text-xl" />
+                <a
+                  href="https://www.linkedin.com/in/peter-steenbergen"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    className="text-blue-600 dark:text-blue-400 text-xl"
+                  />
                 </a>
-                <a href="https://matrix.to/#/@peter:matrix.org" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faCommentAlt} className="text-green-600 dark:text-green-400 text-xl" />
+                <a
+                  href="https://matrix.to/#/@peter:matrix.org"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faCommentAlt}
+                    className="text-green-600 dark:text-green-400 text-xl"
+                  />
                 </a>
-                <a href="https://github.com/j1nx" target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={faGithub} className="text-xl dark:text-gray-300" />
+                <a
+                  href="https://github.com/j1nx"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGithub}
+                    className="text-xl dark:text-gray-300"
+                  />
                 </a>
               </div>
             </div>

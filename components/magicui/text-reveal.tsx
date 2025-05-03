@@ -35,7 +35,7 @@ export const TextReveal: FC<TextRevealProps> = ({ text, className }) => {
             const end = start + 1 / words.length;
             return (
               <Word key={i} progress={scrollYProgress} range={[start, end]}>
-          <span className="whitespace-nowrap break-normal">{word}</span>
+                <span className="whitespace-nowrap break-normal">{word}</span>
               </Word>
             );
           })}

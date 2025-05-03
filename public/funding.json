@@ -8,7 +8,7 @@
     "description": "OpenVoiceOS is a community-driven, open-source voice AI platform dedicated to creating customizable voice-controlled interfaces with a focus on privacy and security.",
     "webpageUrl": {
       "url": "https://www.openvoiceos.org/",
-	  "wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
+      "wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
     }
   },
   "projects": [
@@ -18,14 +18,20 @@
       "description": "OpenVoiceOS provides an open-source alternative to proprietary voice assistant platforms such as platforms offered by major companies like Amazon, Google, and Apple. ",
       "webpageUrl": {
         "url": "https://www.openvoiceos.org/",
-		"wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
+        "wellKnown": "https://www.openvoiceos.org/.well-known/funding-manifest-urls"
       },
       "repositoryUrl": {
         "url": "https://github.com/OpenVoiceOS/ovos-releases",
-		"wellKnown": "https://github.com/OpenVoiceOS/ovos-releases/blob/main/.well-known/funding-manifest-urls"
+        "wellKnown": "https://github.com/OpenVoiceOS/ovos-releases/blob/main/.well-known/funding-manifest-urls"
       },
       "licenses": ["spdx:Apache-2.0"],
-      "tags": ["voice-assistant", "open-source", "AI", "privacy", "cross-platform"]
+      "tags": [
+        "voice-assistant",
+        "open-source",
+        "AI",
+        "privacy",
+        "cross-platform"
+      ]
     }
   ],
   "funding": {
@@ -35,83 +41,83 @@
         "type": "bank",
         "description": "We accept direct bank transfers. Please email for details."
       },
-	  {
+      {
         "guid": "paypal",
         "type": "payment-provider",
         "address": "https://www.paypal.com/paypalme/openvoiceos",
-		"description": "Payments by direct PayPal transfers."
+        "description": "Payments by direct PayPal transfers."
       },
       {
         "guid": "patreon",
         "type": "payment-provider",
         "address": "https://www.patreon.com/openvoiceos",
-		"description": "Payments up to €5000,- per month can be made via Patreon."
+        "description": "Payments up to €5000,- per month can be made via Patreon."
       },
       {
         "guid": "liberapay",
         "type": "payment-provider",
         "address": "https://liberapay.com/OpenVoiceOS-Foundation/",
-		"description": "We accept payments through liberapay."
+        "description": "We accept payments through liberapay."
       },
       {
         "guid": "github-sponsors",
         "type": "payment-provider",
         "address": "https://github.com/sponsors/OpenVoiceOS",
-		"description": "Payments up to €5000,- per month or as one time can be made via Github sponsors."
+        "description": "Payments up to €5000,- per month or as one time can be made via Github sponsors."
       }
     ],
     "plans": [
       {
         "guid": "sustainable-development",
-	    "status": "active",
+        "status": "active",
         "name": "Ensure Sustainable Open Development",
         "description": "Maintain and expand OpenVoiceOS as a fully open-source project by securing sustainable funding for hosting, development, and long-term maintenance.",
-	    "amount": 0,
+        "amount": 0,
         "currency": "EUR",
         "frequency": "other",
-	    "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
+        "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       },
       {
         "guid": "device-integration",
-		"status": "active",
+        "status": "active",
         "name": "Expand Device Compatibility",
         "description": "Support additional hardware platforms, including Raspberry Pi, embedded Linux devices, and smart home integrations.",
         "amount": 0,
         "currency": "EUR",
         "frequency": "other",
-	    "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
+        "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       },
       {
         "guid": "privacy-enhancements",
-		"status": "active",
+        "status": "active",
         "name": "Improve Privacy and Offline Capabilities",
         "description": "Enhance privacy-focused features such as offline voice processing, self-hosted AI models, and local speech-to-text processing.",
         "amount": 0,
         "currency": "EUR",
         "frequency": "other",
-	    "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
+        "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       },
       {
         "guid": "developer-support",
-		"status": "inactive",
+        "status": "inactive",
         "name": "Fund Developer Bounties and Grants",
         "description": "Create a bounty program to incentivize community developers to contribute features, bug fixes, and improvements.",
         "amount": 0,
         "currency": "EUR",
         "frequency": "other",
-	    "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
+        "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       },
       {
         "guid": "ovos-persona-development",
-		"status": "active",
+        "status": "active",
         "name": "Fund OVOS Persona Development",
         "description": "Support the development of OVOS Persona, enabling users to create and customize unique AI assistant identities with enhanced voice personalization.",
         "amount": 0,
         "currency": "EUR",
         "frequency": "other",
-	    "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
+        "channels": ["paypal", "patreon", "liberapay", "github-sponsors"]
       }
     ],
-	"history": []
+    "history": []
   }
 }

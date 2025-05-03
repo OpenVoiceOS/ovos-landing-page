@@ -1,54 +1,104 @@
-import React from 'react'
-import Link from 'next/link'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAt, faBook, faCommentAlt, faUserFriends } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import React from "react";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faAt,
+  faBook,
+  faCommentAlt,
+  faUserFriends,
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function ContactUs() {
   return (
-    <section className="relative flex flex-col items-center justify-center px-4 sm:px-6">
-      <div className="pt-16 pb-20 md:pt-20 md:pb-20 text-center max-w-4xl" data-aos="zoom-y-out">
-        <h1 className="text-4xl md:text-4xl font-extrabold leading-tighter tracking-tighter mb-4 dark:text-gray-100">
-          Have a question or need help?
-        </h1>
-        <p className="text-xl text-gray-800 mb-8 dark:text-gray-300">
-          Feel free to reach out to us. Whether you have a question or want to contribute to the project, we would love to hear from you.
-        </p>
-        <div className="flex flex-wrap justify-center gap-4">
-          <Link href="https://github.com/openVoiceOS/" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-900 dark:hover:bg-gray-700">
-            <FontAwesomeIcon icon={faGithub} className="mr-2" />
-            GitHub
-          </Link>
-          <Link href="https://openvoiceos.github.io/ovos-technical-manual/" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-900 dark:hover:bg-gray-700">
-            <FontAwesomeIcon icon={faBook} className="mr-2" />
-            Documentation
-          </Link>
-          <Link href="https://github.com/OpenVoiceOS/OpenVoiceOS/discussions" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-900 dark:hover:bg-gray-700">
-            <FontAwesomeIcon icon={faUserFriends} className="mr-2" />
-            Discussion
-          </Link>
-          <Link href="https://matrix.to/#/!XFpdtmgyCoPDxOMPpH:matrix.org?via=matrix.org" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-900 dark:hover:bg-gray-700">
-            <FontAwesomeIcon icon={faCommentAlt} className="mr-2" />
-            Matrix
-          </Link>
-          <Link href="mailto:dev@openvoiceos.org" className="bg-black text-white font-bold py-2 px-4 rounded flex items-center dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-900 dark:hover:bg-gray-700">
-            <FontAwesomeIcon icon={faAt} className="mr-2" />
-            Email
-          </Link>
+    <section className="relative py-16 md:py-24 bg-gradient-to-b from-white to-stone-100 dark:from-stone-900 dark:to-stone-800">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="max-w-3xl mx-auto text-center mb-12" data-aos="fade-up">
+          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight mb-6 dark:text-stone-100">
+            Have a question or need help?
+          </h1>
+          <p className="text-xl text-stone-600 dark:text-stone-300">
+            Feel free to reach out to us. Whether you have a question or want to
+            contribute to the project, we would love to hear from you.
+          </p>
         </div>
-        <div className="flex items-center justify-center mt-5">
-            <p className="text-black dark:text-white text-center font-extrabold" data-aos="zoom-y-out" data-aos-delay="150">
-            Are you an business or organization looking to integrate Open Voice OS into your products? Check <Link href="/contact-form" className="underline">Contact Form</Link> to get in touch with us.
-            </p>
+
+        <div
+          className="max-w-4xl mx-auto mb-16"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+            {[
+              {
+                href: "https://github.com/openVoiceOS/",
+                icon: faGithub,
+                text: "GitHub",
+              },
+              {
+                href: "https://openvoiceos.github.io/ovos-technical-manual/",
+                icon: faBook,
+                text: "Documentation",
+              },
+              {
+                href: "https://github.com/OpenVoiceOS/OpenVoiceOS/discussions",
+                icon: faUserFriends,
+                text: "Discussion",
+              },
+              {
+                href: "https://matrix.to/#/!XFpdtmgyCoPDxOMPpH:matrix.org?via=matrix.org",
+                icon: faCommentAlt,
+                text: "Matrix",
+              },
+              { href: "mailto:dev@openvoiceos.org", icon: faAt, text: "Email" },
+            ].map((link, index) => (
+              <Link
+                key={index}
+                href={link.href}
+                className="bg-stone-800 hover:bg-stone-700 text-white font-medium py-3 px-6 rounded-lg flex items-center transition-colors duration-200 shadow-md"
+              >
+                <FontAwesomeIcon icon={link.icon} className="mr-3 h-5 w-5" />
+                {link.text}
+              </Link>
+            ))}
+          </div>
         </div>
-        <div className="flex items-center justify-center mt-10">
-          <div className="bg-black dark:bg-white dark:text-black rounded-xl p-5 mx-auto" data-aos="zoom-y-out" data-aos-delay="150">
-            <p className="text-white dark:text-black text-center font-extrabold" data-aos="zoom-y-out" data-aos-delay="150">
-              Want to be a part of Open Voice OS check <Link href="/contribution" className="underline">Contribution Page</Link> to learn more.
+
+        <div className="max-w-4xl mx-auto text-black dark:text-white">
+          <div
+            className="bg-white dark:bg-stone-800 rounded-xl p-8 shadow-lg border border-stone-100 dark:border-stone-700"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <p className="text-stone-800 dark:text-stone-200 text-lg mb-4">
+              <span className="font-bold">
+                Are you a business or organization
+              </span>{" "}
+              looking to integrate Open Voice OS into your products?
+              <Link
+                href="/contact-form"
+                className="text-blue-600 dark:text-blue-400 hover:underline ml-2 font-medium"
+              >
+                Fill out our contact form
+              </Link>{" "}
+              to get in touch with us.
             </p>
+
+            <div className="mt-6 pt-6 border-t border-stone-200 dark:border-stone-700">
+              <p className="text-lg font-medium">
+                Want to be a part of Open Voice OS? Check our
+                <Link
+                  href="/contribution"
+                  className="text-blue-600 dark:text-blue-400 hover:underline ml-2 font-bold"
+                >
+                  Contribution Page
+                </Link>{" "}
+                to learn more.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }

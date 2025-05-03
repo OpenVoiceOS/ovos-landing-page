@@ -1,14 +1,14 @@
 export const metadata = {
-    title: 'Share',
-    description: 'Share OpenVoiceOS with the World',
-}
+  title: "Share",
+  description: "Share OpenVoiceOS with the World",
+};
 
-import Sharing from '@/components/share'
+import Sharing from "@/components/share";
 
-    export default function Donate() {
-    return (
-        <>
-        <Sharing />
-        </>
-    )
+export default function Donate() {
+  return (
+    <>
+      <Sharing />
+    </>
+  );
 }

@@ -1,14 +1,14 @@
 export const metadata = {
-    title: 'Translation',
-    description: 'Translate',
-}
+  title: "Translation",
+  description: "Translate",
+};
 
-import Translation from "@/components/translation"
+import Translation from "@/components/translation";
 
-    export default function translation() {
-    return (
-        <>
-        <Translation />
-        </>
-    )
+export default function translation() {
+  return (
+    <>
+      <Translation />
+    </>
+  );
 }
