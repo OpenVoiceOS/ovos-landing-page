@@ -89,7 +89,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="https://blog.openvoiceos.org/"
                   className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   Blog

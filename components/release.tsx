@@ -26,13 +26,12 @@ export default function Release() {
                     🎉 OpenVoiceOS Skill Store is now in beta!
                 </button> */}
         <a
-          href="/press"
+          href="https://blog.openvoiceos.org/"
           className="text-center text-xl font-extrabold relative underline underline-offset-4 decoration-[#fb4c4c] decoration-4"
           data-aos="zoom-y-out"
           data-aos-delay="150"
         >
-          🎉 OpenVoiceOS Foundation is now live! Click here for the press
-          release
+          🎉 OpenVoiceOS Blogs is now live!
         </a>
       </div>
       {/* {showDialog && (

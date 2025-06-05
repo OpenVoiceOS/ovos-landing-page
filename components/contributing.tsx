@@ -31,7 +31,7 @@ const featuresData = [
         </g>
       </svg>
     ),
-    url: "https://openvoiceos.github.io/ovos-technical-manual/community/",
+    url: "https://github.com/openVoiceOS/",
   },
   {
     title: "Building a Skill and/or Plugin",
@@ -114,7 +114,7 @@ const featuresData = [
         </g>
       </svg>
     ),
-    url: "https://openvoiceos.github.io/ovos-technical-manual/guidelines/",
+    url: "https://openvoiceos.github.io/ovos-technical-manual/400-skill-design-guidelines/",
   },
   {
     title: "Helping with Translation",
@@ -176,7 +176,7 @@ const featuresData = [
         </g>
       </svg>
     ),
-    url: "https://ovos-user-manual.openvoiceos.org/",
+    url: "https://openvoiceos.github.io/ovos-technical-manual/",
   },
   {
     title: "Sharing is Caring",

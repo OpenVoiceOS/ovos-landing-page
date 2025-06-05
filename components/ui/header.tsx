@@ -50,7 +50,7 @@ export default function Header() {
       label: "Documentation",
     },
     { href: "/team", label: "Team" },
-    { href: "#", label: "Blogs" },
+    { href: "https://blog.openvoiceos.org/", label: "Blogs" },
     { href: "/contribution", label: "Contribution" },
   ];
 
