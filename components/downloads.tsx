@@ -217,12 +217,10 @@ export default function DownloadPage() {
               Mycroft Devices
             </h2>
             <p className="text-lg text-gray-700 mb-8">
-              We maintain buildroot and prebuild images for Raspberry Pi which
-              are compatible with Mycroft devices. You can download the latest
-              image from{" "}
+              For Mycroft devices, we recommend using the <Link href="https://github.com/OpenVoiceOS/ovos-installer" className="text-blue-800">OVOS Installer</Link> to set up Open Voice OS. The installer will guide you through the process and ensure all dependencies are installed. More details can be found{" "}
               <Link
-                href="https://ovosimages.ziggyai.online/raspbian/"
-                className="text-blue-800"
+              href="https://github.com/OpenVoiceOS/ovos-installer"
+              className="text-blue-800"
               >
                 here
               </Link>
