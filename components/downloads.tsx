@@ -84,7 +84,7 @@ export default function DownloadPage() {
             Which device are you using?
           </h1>
           <div className="flex flex-col md:flex-row justify-center items-center">
-            <Link href="https://github.com/OpenVoiceOS/raspOVOS/releases">
+            <Link href="https://openvoiceos.github.io/raspOVOS/">
               <Image
                 src={Pi}
                 alt="Raspberry Pi"
