@@ -153,7 +153,7 @@ export default function Footer() {
                 <FontAwesomeIcon icon={faGithub} className="w-6 h-6" />
               </a>
               <a
-                href="https://matrix.to/#/#OpenVoiceOS:matrix.org"
+                href="https://matrix.to/#/#openvoiceos:matrix.org"
                 className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 aria-label="Matrix"
               >
