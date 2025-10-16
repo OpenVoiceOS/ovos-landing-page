@@ -13,7 +13,7 @@ const friends = [
     name: "TigreGótico",
     description:
       "Timely bug fixes and chat support for OVOS are kindly sponsored by TigreGótico, official OVOS R&D partner providing Enterprise support for anything OpenVoiceOS.",
-    website: "https://github.com/TigreGotico",
+    website: "https://tigregotico.pt",
     source: "https://github.com/TigreGotico",
     logo: "https://avatars.githubusercontent.com/u/155266030",
   },
