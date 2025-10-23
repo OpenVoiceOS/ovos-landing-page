@@ -127,17 +127,17 @@ export default function Timeline() {
       description: "Mycroft forums move to Open Conversational AI.",
     },
     {
-      title: "OpenVoiceOS get's out of beta",
-      date: "November 2024",
-      description: "OpenVoiceOS get's out of beta and is ready for the masses.",
-      link: "https://community.openconversational.ai/t/openvoiceos-0-0-8-qa-process-begins-now/15372",
-    },
-    {
       title: "OpenVoice Foundation Established",
       date: "Febuary 2025",
       description:
         "OpenVoice Foundation is established as a non-profit foundation legal entity.",
       link: "/press",
+    },
+    {
+      title: "OpenVoiceOS receives NGI Zero Commons Fund grant",
+      date: "October 2025",
+      description: "OpenVoiceOS has been selected to receive a grant from the NGI Zero Commons Fund!",
+      link: "https://blog.openvoiceos.org/posts/2025-10-20-ngi",
     },
   ];
 
