@@ -26,12 +26,12 @@ export default function Release() {
                     🎉 OpenVoiceOS Skill Store is now in beta!
                 </button> */}
         <a
-          href="https://blog.openvoiceos.org/"
+          href="https://blog.openvoiceos.org/posts/2025-10-20-ngi"
           className="text-center text-xl font-extrabold relative underline underline-offset-4 decoration-[#fb4c4c] decoration-4"
           data-aos="zoom-y-out"
           data-aos-delay="150"
         >
-          🎉 OpenVoiceOS Blogs is now live!
+          🎉 OpenVoiceOS Receives NGI Zero Commons fund grant!
         </a>
       </div>
       {/* {showDialog && (
