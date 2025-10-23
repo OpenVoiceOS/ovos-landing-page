@@ -134,7 +134,7 @@ export default function Timeline() {
       link: "/press",
     },
     {
-      title: "OpenVoiceOS receives NGI Zero Common Fund grant",
+      title: "OpenVoiceOS receives NGI Zero Commons Fund grant",
       date: "October 2025",
       description: "OpenVoiceOS has been selected to receive a grant from the NGI Zero Commons Fund!",
       link: "https://blog.openvoiceos.org/posts/2025-10-20-ngi",
