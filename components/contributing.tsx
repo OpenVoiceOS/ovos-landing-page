@@ -297,6 +297,244 @@ const Contributions = () => {
           />
         ))}
       </div>
+
+      {/* Pull Request Review Process Section */}
+      <div className="mt-20 bg-gray-50 dark:bg-gray-900 py-16 px-6 md:px-12 xl:px-32">
+        <div className="container mx-auto">
+          <h2 className="mb-8 text-3xl text-black dark:text-white font-extrabold md:text-4xl">
+            Pull Request Review Process
+          </h2>
+
+          <p className="text-gray-600 dark:text-gray-300 text-base mb-8">
+            OpenVoiceOS is made up of many smaller projects across multiple
+            GitHub repositories that together power the amazing voice assistant
+            we all know and love.
+          </p>
+
+          <p className="text-gray-600 dark:text-gray-300 text-base mb-8">
+            We're thrilled you're interested in contributing to OpenVoiceOS!
+            This guide will walk you through our Pull Request (PR) process,
+            highlighting how we leverage automation and encourage early
+            collaboration. Our goal is to make contributing as easy and
+            collaborative as possible, so don't worry about perfection!
+          </p>
+
+          {/* TL;DR Box */}
+          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg mb-8">
+            <h3 className="text-xl font-bold text-black dark:text-white mb-4">
+              TL;DR
+            </h3>
+            <ul className="text-gray-600 dark:text-gray-300 space-y-2">
+              <li>
+                • Use{" "}
+                <a
+                  href="https://www.conventionalcommits.org/en/v1.0.0/"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  Conventional Commits
+                </a>
+              </li>
+              <li>• Open draft PRs early, mark as "Ready for Review" when you're ready</li>
+              <li>• CodeRabbit bot helps automate feedback</li>
+              <li>• Everyone is welcome to review PRs, not just maintainers!</li>
+              <li>• PRs are squash-merged to keep history clean</li>
+              <li>• Don't worry about perfection, we'll help you get it right!</li>
+            </ul>
+          </div>
+
+          {/* Main Content Sections */}
+          <div className="space-y-8">
+            {/* Who is responsible */}
+            <div>
+              <h3 className="text-2xl font-bold text-black dark:text-white mb-4">
+                Who is responsible for reviewing PRs?
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
+                OpenVoiceOS is an open source project. Most of everything
+                happening in our project is done by volunteers. We have a core
+                team of developers that are responsible for the overall
+                architecture of OpenVoiceOS, and they are responsible for
+                merging PRs (also volunteers). However, they are not the only
+                ones reviewing PRs.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
+                Everyone is welcome to review PRs, and we encourage you to jump
+                in!
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 text-base">
+                So, when you have opened a PR, please consider checking out if
+                there is an open PR you can help out with. Any review comment,
+                improvement suggestion, or even just a "I tested this using ...
+                and it works" is very much appreciated. Besides, reviewing
+                others' code is a great way to learn more about OpenVoiceOS.
+              </p>
+            </div>
+
+            {/* Conventional Commits */}
+            <div>
+              <h3 className="text-2xl font-bold text-black dark:text-white mb-4">
+                Conventional Commits
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
+                We use{" "}
+                <a
+                  href="https://www.conventionalcommits.org/en/v1.0.0/"
+                  className="text-blue-600 dark:text-blue-400 hover:underline"
+                >
+                  Conventional Commits
+                </a>{" "}
+                to help our bots process and categorize changes. Don't stress if
+                you're not an expert; it's mostly about clear, concise commit
+                messages. For example:
+              </p>
+              <ul className="text-gray-600 dark:text-gray-300 space-y-2 ml-4">
+                <li>• <code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">feat: add new voice command for weather</code></li>
+                <li>• <code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">fix: resolve issue with audio playback on startup</code></li>
+                <li>• <code className="bg-gray-200 dark:bg-gray-700 px-2 py-1 rounded">docs: update installation instructions</code></li>
+              </ul>
+            </div>
+
+            {/* Creating and Managing PRs */}
+            <div>
+              <h3 className="text-2xl font-bold text-black dark:text-white mb-4">
+                Creating and Managing Your PR
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-base mb-4">
+                We encourage you to open PRs <strong>early and often</strong>,
+                even if your code isn't perfect or fully functional. This allows
+                our bots and maintainers to provide feedback and guidance
+                throughout your development process.
+              </p>
+
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold text-black dark:text-white mb-2">
+                    Our Code RabbitAI Bot:
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-base mb-3">
+                    Once you open a PR, our <strong>Code RabbitAI bot</strong>{" "}
+                    will automatically review your code. This bot helps with
+                    initial checks, style suggestions, and identifying potential
+                    issues, speeding up the review process.
+                  </p>
+                  <ul className="text-gray-600 dark:text-gray-300 space-y-2 ml-4">
+                    <li>
+                      • <strong>Draft PRs:</strong> If you're actively
+                      implementing changes and want to avoid the bot "annoying"
+                      you with reviews on every commit, simply mark your PR as a{" "}
+                      <strong>Draft</strong>.
+                    </li>
+                    <li>
+                      • <strong>Ready for Review:</strong> When you're ready for
+                      another round of feedback from the bot and maintainers,
+                      mark your PR as <strong>Ready for Review</strong>. The bot
+                      will then re-engage and provide its insights.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-black dark:text-white mb-2">
+                    Commit History:
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-base">
+                    Don't obsess over a pristine commit history within your PR.
+                    All PRs will be <strong>squashed on merge to <code className="bg-gray-200 dark:bg-gray-700 px-1">dev</code></strong>,
+                    meaning your individual commits will be condensed into a
+                    single commit when integrated into the main development
+                    branch. This keeps our <code className="bg-gray-200 dark:bg-gray-700 px-1">dev</code> branch
+                    history clean and easy to navigate. The commit on the{" "}
+                    <code className="bg-gray-200 dark:bg-gray-700 px-1">dev</code> branch
+                    will also <strong>link directly to your original PR</strong>,
+                    making it easy to reference at any point.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-black dark:text-white mb-2">
+                    Code Style:
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-base">
+                    Don't stress about strict code style adherence. Just use
+                    common sense and try to stick to the surrounding code's
+                    style. While we loosely follow <strong>PEP8</strong>, we
+                    consider code style largely the job of our bots and CI.
+                    We're thankful for your collaboration and want to make it as
+                    easy as possible for you to get started, without annoying
+                    you with nitpicks.
+                  </p>
+                </div>
+
+                <div>
+                  <h4 className="font-semibold text-black dark:text-white mb-2">
+                    Feedback and Iteration:
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-300 text-base">
+                    The Code RabbitAI bot and our maintainers will provide
+                    feedback directly on your PR. Remember, these comments are
+                    not personal; they're meant to help you improve your
+                    contribution. Don't hesitate to ask questions or seek
+                    clarification.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* What to Expect */}
+            <div>
+              <h3 className="text-2xl font-bold text-black dark:text-white mb-4">
+                What to Expect After Opening a PR
+              </h3>
+              <ul className="text-gray-600 dark:text-gray-300 space-y-3">
+                <li>
+                  • <strong>Initial Bot Review:</strong> The Code RabbitAI bot
+                  will provide an initial automated review, offering suggestions
+                  and pointing out any immediate concerns.
+                </li>
+                <li>
+                  • <strong>Maintainer Review:</strong> Our maintainers will
+                  review your PR, providing more in-depth feedback on design,
+                  functionality, and adherence to OpenVoiceOS principles.
+                </li>
+                <li>
+                  • <strong>Iteration:</strong> You'll likely go through a few
+                  rounds of revisions based on the feedback you receive. Use the
+                  Draft PR feature to manage this process effectively.
+                </li>
+                <li>
+                  • <strong>Merging:</strong> Once your PR meets our standards
+                  and passes all checks, a maintainer will merge it into the{" "}
+                  <code className="bg-gray-200 dark:bg-gray-700 px-1">dev</code> branch.
+                </li>
+                <li>
+                  • <strong>If a PR isn't merged:</strong> If for any reason we
+                  decide not to merge a PR, please don't take it personally.
+                  We'll most likely offer a way to add any missing functionality
+                  via a standalone plugin you can maintain independently. Just
+                  talk to us!
+                </li>
+              </ul>
+            </div>
+
+            {/* Don't Worry */}
+            <div className="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-200 dark:border-gray-700 mb-8">
+              <h3 className="text-2xl font-bold text-black dark:text-white mb-4">
+                Don't Worry About Perfection!
+              </h3>
+              <p className="text-gray-600 dark:text-gray-300 text-base">
+                If any of the above seems too complex, don't worry! Our Code
+                RabbitAI bot and our maintainers are here to help. If your
+                commits aren't perfectly conventional or your PR needs some
+                refinement, a maintainer or bot will fix it for you or guide you
+                on how to make the necessary adjustments.
+              </p>
+              <p className="text-gray-600 dark:text-gray-300 text-base mt-4">
+                We're excited to see your contributions to OpenVoiceOS!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
