@@ -45,6 +45,19 @@ const teamMembers: TeamMember[] = [
     image: "https://avatars.githubusercontent.com/u/65565784",
     country: "USA 🇺🇸",
   },
+    {
+    name: "Timon van Hasselt",
+    handle: "timonvanhasselt",
+    image: "https://avatars.githubusercontent.com/u/11682432",
+    country: "Netherlands 🇳🇱",
+  },
+    {
+    name: "Flávio De Melo",
+    handle: "femelo",
+    image: "https://avatars.githubusercontent.com/u/28808345",
+    country: "Brazil 🇧🇷",
+  }
+
 ];
 
 const Halloffame: React.FC = () => {
