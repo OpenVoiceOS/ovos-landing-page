@@ -1,0 +1,37 @@
+# OpenVoiceOS (OVOS)
+
+> A community-driven, open-source, privacy-focused voice AI platform for creating custom voice-controlled interfaces.
+
+## Summary
+OpenVoiceOS is a Linux-based operating system and framework for building custom voice assistants. It allows for granular control over privacy, modularity, and hardware. It started as a fork of Mycroft AI, designed to run on embedded devices (Raspberry Pi), desktops, and servers.
+
+## Official Resources
+- [About OVOS](https://www.openvoiceos.org/about) - Mission, vision, and project overview.
+- [The Team](https://www.openvoiceos.org/team) - Core contributors and foundation members.
+- [Friends & Partners](https://www.openvoiceos.org/friends) - Partner projects and organizations.
+- [Donations](https://www.openvoiceos.org/donation) - Support the OpenVoiceOS Foundation.
+- [Share](https://www.openvoiceos.org/share) - Resources for sharing OVOS content.
+
+## Documentation & Support
+- [Technical Manual](https://openvoiceos.github.io/ovos-technical-manual) - **Primary Documentation**. Architecture, APIs, and integration guides.
+- [GitHub Discussions](https://github.com/OpenVoiceOS/OpenVoiceOS/discussions) - Community support, Q&A, and feature requests.
+- [Translation](https://www.openvoiceos.org/translation) - Guide for contributing translations to the platform.
+- [Contribution Guide](https://www.openvoiceos.org/contribution) - Guidelines for contributing code and resources.
+
+## News & Updates
+- [Official Blog](https://blog.openvoiceos.org/) - Project announcements and articles.
+- [RSS Feed](https://blog.openvoiceos.org/feed.xml) - XML feed for blog updates.
+
+## Code & Models
+- [GitHub Organization](https://github.com/OpenVoiceOS) - Source code for Core, Messagebus, and Plugins.
+- [Hugging Face](https://huggingface.co/OpenVoiceOS) - Host for voice models, wake word models, and datasets.
+- [Docker](https://github.com/OpenVoiceOS/ovos-docker) - Containerized deployment configurations.
+
+## Architecture Overview
+- **Messagebus (IPC):** A core feature connecting all services. It uses a **websocket** protocol (default port 8181) and is **restricted to localhost** by default for security. All data is passed as JSON messages.
+- **Core:** The central `ovos-core` service manages skill loading and NLP.
+- **Audio:** The `ovos-audio` service handles all audio output.
+- **Listener:** The `ovos-dinkum-listener` service handles all audio input.
+- **Plugins (Modular System):** OVOS is built entirely around plugins, managed by `ovos-plugin-manager`. Key categories include **STT, TTS, Wake Word (WW), Audio Backend, PHAL (Hardware), VAD and Intent Parsers**.
+- **Agents/Personas:** The platform supports multiple "Personas" allowing different behavior profiles to run concurrently. [See Personas Documentation](https://openvoiceos.github.io/ovos-technical-manual/150-personas/) for details.
+- **Skills:** Python-based modules (apps) that implement specific functionality and listen for intent messages.
