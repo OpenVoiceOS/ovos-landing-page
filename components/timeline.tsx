@@ -127,10 +127,10 @@ export default function Timeline() {
       description: "Mycroft forums move to Open Conversational AI.",
     },
     {
-      title: "OpenVoice Foundation Established",
+      title: "OpenVoice OS Foundation Established",
       date: "Febuary 2025",
       description:
-        "OpenVoice Foundation is established as a non-profit foundation legal entity.",
+        "OpenVoice OS Foundation is established as a non-profit foundation legal entity.",
       link: "/press",
     },
     {
