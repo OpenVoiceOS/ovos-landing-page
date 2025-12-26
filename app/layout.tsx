@@ -1,6 +1,7 @@
 import "./css/style.css";
 
 import { Inter } from "next/font/google";
+import Script from "next/script";
 
 import Header from "@/components/ui/header";
 import "@fortawesome/fontawesome-svg-core/styles.css";
@@ -31,6 +32,11 @@ export default function RootLayout({
       <body
         className={`${inter.variable} font-inter antialiased bg-white dark:bg-stone-900 text-gray-900 tracking-tight`}
       >
+        <Script
+          src="https://cdn.tigregotico.pt/api/script.js"
+          data-site-id="cd9f0c1ea196"
+          strategy="afterInteractive"
+        />
         <NextThemesProvider attribute="class">
           <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
             <Header />
