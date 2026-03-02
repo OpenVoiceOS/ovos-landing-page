@@ -106,7 +106,7 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="https://github.com/OpenVoiceOS/OpenVoiceOS/discussions"
+                href="https://github.com/orgs/OpenVoiceOS/discussions"
                 className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center"
                 onClick={() => setMobileNavOpen(false)}
               >

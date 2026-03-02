@@ -42,7 +42,7 @@ export default function Header() {
     { href: "/downloads", label: "Downloads" },
     { href: "/about", label: "About" },
     {
-      href: "https://github.com/OpenVoiceOS/OpenVoiceOS/discussions",
+      href: "https://github.com/orgs/OpenVoiceOS/discussions",
       label: "Discussion",
     },
     {

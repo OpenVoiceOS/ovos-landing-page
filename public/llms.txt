@@ -14,7 +14,7 @@ OpenVoiceOS is a Linux-based operating system and framework for building custom 
 
 ## Documentation & Support
 - [Technical Manual](https://openvoiceos.github.io/ovos-technical-manual) - **Primary Documentation**. Architecture, APIs, and integration guides.
-- [GitHub Discussions](https://github.com/OpenVoiceOS/OpenVoiceOS/discussions) - Community support, Q&A, and feature requests.
+- [GitHub Discussions](https://github.com/orgs/OpenVoiceOS/discussions) - Community support, Q&A, and feature requests.
 - [Translation](https://www.openvoiceos.org/translation) - Guide for contributing translations to the platform.
 - [Contribution Guide](https://www.openvoiceos.org/contribution) - Guidelines for contributing code and resources.
 

@@ -249,6 +249,12 @@ export default function Footer() {
                   <span>Check status of running services</span>
                 </div>
               </Link>
+              <Link
+                href="https://telemetry.smartgic.io/ovos-installer/dashboard/"
+                className="text-sm text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300 transition-colors"
+              >
+                Installer Telemetry
+              </Link>
             </div>
           </div>
         </div>

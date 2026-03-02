@@ -41,7 +41,7 @@ export default function ContactUs() {
                 text: "Documentation",
               },
               {
-                href: "https://github.com/OpenVoiceOS/OpenVoiceOS/discussions",
+                href: "https://github.com/orgs/OpenVoiceOS/discussions",
                 icon: faUserFriends,
                 text: "Discussion",
               },
