@@ -21,14 +21,14 @@ export default function Translation() {
               data-aos-delay="150"
             >
               The easiest way to help us is to translate content using
-              GitLocalize - a powerful tool designed for translating open-source
+              OVOS Localize - a powerful tool designed for translating open-source
               projects into multiple languages. Watch the tutorial below to get
               started.
             </p>
           </div>
 
           {/* Video Section */}
-          <div
+          {/* <div
             className="relative rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto"
             data-aos="fade-up"
           >
@@ -39,14 +39,14 @@ export default function Translation() {
               allowFullScreen
             />
           </div>
-
+ */}
           {/* Action Buttons */}
           <div className="flex flex-wrap justify-center gap-4 mt-12">
             <Link
               className="inline-flex items-center px-6 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold transition-transform hover:scale-105 hover:shadow-lg"
               href="/translation/tutorial"
             >
-              <span>Text Tutorial</span>
+              <span>Tutorial</span>
               <svg
                 className="w-5 h-5 ml-2"
                 fill="none"
@@ -64,9 +64,9 @@ export default function Translation() {
             </Link>
             <Link
               className="inline-flex items-center px-6 py-3 rounded-lg bg-gray-900 dark:bg-gray-700 text-white font-semibold transition-transform hover:scale-105 hover:shadow-lg"
-              href="https://gitlocalize.com/users/OpenVoiceOS"
+              href="https://openvoiceos.github.io/ovos-localize/"
             >
-              <span>Translate on GitLocalize</span>
+              <span>Translate on OVOS Localize</span>
               <svg
                 className="w-5 h-5 ml-2"
                 fill="none"
@@ -100,7 +100,7 @@ export default function Translation() {
               data-aos-delay="150"
             >
               If you're a developer looking to contribute to the project, you
-              might need to work directly with the code when GitLocalize isn't
+              might need to work directly with the code when OVOS Localize isn't
               sufficient. Check out our comprehensive developer's translation
               guide for detailed instructions.
             </p>

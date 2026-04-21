@@ -1,6 +1,6 @@
 export const metadata = {
   title: "Tutorial",
-  description: "Learn how to translate content using GitLocalize",
+  description: "Learn how to translate content using OVOS Localize",
 };
 
 import Tutorial from "@/components/tutorial";
