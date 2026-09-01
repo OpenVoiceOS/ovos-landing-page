@@ -1,10 +1,10 @@
-# Open Voice OS
+# OpenVoiceOS
 
-Welcome to Open Voice OS, community-driven, open-source AI voice platform! 🎉🚀
+This repository holds the public website for OpenVoiceOS, a community-driven, open-source voice AI platform. The site introduces the project and links to the team, community, and documentation pages. It is a Next.js app that builds to static files for hosting.
 
-# Development
+## Development
 
-To run the project locally
+To run the project locally:
 
 1. Clone the repository:
 
@@ -24,10 +24,16 @@ To run the project locally
    npm run dev
    ```
 
-Note: When cloning the repository, you can use the `depth=1` flag to avoid downloading the entire history. 🌳
+When you clone the repository, add the `--depth=1` flag to skip the full commit history.
 
-# Contributing
+## Related projects
 
-We love contributions from everyone! Whether you're a seasoned developer or just starting out, we have a curated list of issues that are perfect for new contributors. Look out for issues tagged with the `good first issue` label. 👍
+- [OpenVoiceOS/ovos-technical-manual](https://github.com/OpenVoiceOS/ovos-technical-manual): the primary technical documentation, covering architecture, APIs, and integration guides.
+- [OpenVoiceOS](https://github.com/OpenVoiceOS): the GitHub organization, with the core platform, the messagebus, and all plugins.
+- [OpenVoiceOS/ovos-docker](https://github.com/OpenVoiceOS/ovos-docker): containerized deployment configurations.
 
-If you have any questions, need to report bugs, or want to request new features, feel free to use the Issues tab. You can also join our Matrix chat community for real-time discussions: [Matrix chat](https://matrix.to/#/#openvoiceos:matrix.org) (Hello! 👋)
+## Contributing
+
+We welcome contributions from everyone. If you are new to the project, look for issues tagged `good first issue`.
+
+Use the Issues tab to ask questions, report bugs, or request features. You can also join the Matrix chat for real-time discussion: [Matrix chat](https://matrix.to/#/#openvoiceos:matrix.org).
