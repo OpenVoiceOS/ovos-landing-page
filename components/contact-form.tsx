@@ -19,7 +19,7 @@ export default function ContactForm() {
     success: false,
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.SubmitEvent<HTMLFormElement>) => {
     e.preventDefault();
     setStatus({
       submitted: false,
@@ -190,11 +190,12 @@ export default function ContactForm() {
             </div>
 
             <div className="flex items-center justify-end pt-4">
-              <button type="submit" disabled={status.submitting}>
-                <InteractiveHoverButton>
-                  {status.submitting ? "Sending..." : "Send Message"}
-                </InteractiveHoverButton>
-              </button>
+              <InteractiveHoverButton
+                type="submit"
+                disabled={status.submitting}
+              >
+                {status.submitting ? "Sending..." : "Send Message"}
+              </InteractiveHoverButton>
             </div>
 
             {status.error && (

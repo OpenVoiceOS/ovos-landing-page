@@ -244,7 +244,7 @@ const Feature = ({
 }: {
   title: string;
   description: string;
-  icon: JSX.Element;
+  icon: React.JSX.Element;
   url: string;
 }) => (
   <div className="text-center bg-white dark:bg-gray-800 p-8 rounded-xl shadow">
