@@ -36,7 +36,7 @@ export default function Features() {
                 Community Driven
               </h4>
               <p className="text-gray-600 dark:text-gray-300 text-center">
-                Powered by developers around the globe from various Linux and
+                Powered by developers around the globe from various Linux and
                 Foss communities, an open platform for developers interested in
                 making cutting-edge voice assistance technology available to
                 everyone.

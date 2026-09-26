@@ -103,6 +103,7 @@ export default function Gettingstarted() {
                 >
                   {/* Item 1 */}
                   <Transition
+                    as="div"
                     show={tab === 1}
                     appear={true}
                     className="w-full"
@@ -127,6 +128,7 @@ export default function Gettingstarted() {
                   </Transition>
                   {/* Item 2 */}
                   <Transition
+                    as="div"
                     show={tab === 2}
                     appear={true}
                     className="w-full"
