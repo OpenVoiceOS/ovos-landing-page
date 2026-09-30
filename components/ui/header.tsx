@@ -9,7 +9,12 @@ import { ThemeSwitcher } from "./theme";
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
+  const [mounted, setMounted] = useState(false);
   const pathname = usePathname();
+
+  // Highlight the active link only after mount so the server HTML and the
+  // first client render always match (avoids hydration mismatches).
+  useEffect(() => setMounted(true), []);
 
   const scrollHandler = () => {
     window.pageYOffset > 10 ? setTop(false) : setTop(true);
@@ -23,7 +28,7 @@ export default function Header() {
 
   const NavLink = ({ href, label }: { href: string; label: string }) => {
     const isExternal = href.startsWith("http");
-    const isActive = pathname === href;
+    const isActive = mounted && pathname === href;
 
     const linkStyles = `font-medium ${
       isActive ? "font-extrabold text-black dark:text-white" : "text-gray-600"
