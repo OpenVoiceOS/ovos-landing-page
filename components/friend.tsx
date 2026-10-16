@@ -26,6 +26,14 @@ const friends = [
     logo: "https://avatars.githubusercontent.com/u/73618837?s=200&v=4",
   },
   {
+    name: "Oscillate Labs",
+    description:
+      "Oscillate Labs builds private, local voice assistants and AI agents on top of OVOS and Neon. They maintain many OVOS skills and plugins, including the Home Assistant and Music Assistant skills, ovos-mac and a Rust implementation of the OVOS messagebus.",
+    website: "https://oscillatelabs.net",
+    source: "https://github.com/OscillateLabsLLC",
+    logo: "https://avatars.githubusercontent.com/u/176733444?v=4",
+  },
+  {
     name: "NeonGecko",
     description:
       "Neon was one of the first projects ever to adopt ovos-core as a library to build their own voice assistant, Neon works closely together with OVOS and both projects are mostly compatible.",
