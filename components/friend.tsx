@@ -39,7 +39,7 @@ const friends = [
       "Neon was one of the first projects ever to adopt ovos-core as a library to build their own voice assistant, Neon works closely together with OVOS and both projects are mostly compatible.",
     website: "https://neon.ai",
     source: "https://github.com/NeonGeckoCom",
-    logo: "https://neon.ai/wp-content/uploads/2024/04/neon-ai-artificial-intelligence-2-2-3.png",
+    logo: "https://avatars.githubusercontent.com/u/32377662?v=4",
   },
   {
     name: "Proyecto Ilenia",
@@ -55,7 +55,7 @@ const friends = [
       "Visio offers information and advice, but also various forms of research, guidance, rehabilitation, education, work and living. These services are available for people who are visually impaired or blind, even if they also have an intellectual, physical or other sensory disability.",
     website: "http://www.visio.org",
     source: "https://voicelab.visio.org/",
-    logo: "https://www.visio.org/media/klhfdhpp/visio-logo.svg",
+    logo: "https://www.visio.org/media/ce1fbcij/visio-logo.svg",
   },
   {
     name: "Mycroft",
@@ -110,13 +110,13 @@ export default function Friends() {
                   {friend.description}
                 </p>
                 <div className="mt-auto flex justify-between items-center">
-                  <Link href={friend.website}>
+                  <Link href={friend.website} target="_blank" rel="noopener noreferrer">
                     <p className="text-blue-600 dark:text-blue-400 font-bold">
                       Website
                     </p>
                   </Link>
                   {friend.source && (
-                    <Link href={friend.source}>
+                    <Link href={friend.source} target="_blank" rel="noopener noreferrer">
                       <p className="text-blue-600 dark:text-blue-400 font-bold">
                         Source Code
                       </p>
