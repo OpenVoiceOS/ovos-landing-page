@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Logo from "./logo";
 import MobileMenu from "./mobile-menu";
-import { ThemeSwitcher } from "./theme";
+import ExternalArrow from "./external-arrow";
 
 export default function Header() {
   const [top, setTop] = useState<boolean>(true);
@@ -36,8 +36,15 @@ export default function Header() {
 
     return (
       <li>
-        <Link href={href}>
-          <p className={linkStyles}>{label}</p>
+        <Link
+          href={href}
+          {...(isExternal && { target: "_blank", rel: "noopener noreferrer" })}
+        >
+          <p className={linkStyles}>
+            {label}
+            {isExternal && <ExternalArrow />}
+            {isExternal && <span className="sr-only"> (opens in new tab)</span>}
+          </p>
         </Link>
       </li>
     );
@@ -51,7 +58,7 @@ export default function Header() {
       label: "Discussion",
     },
     {
-      href: "https://openvoiceos.github.io/ovos-technical-manual",
+      href: "https://openvoiceos.github.io/beta-technical-manual",
       label: "Documentation",
     },
     { href: "/team", label: "Team" },
@@ -79,11 +86,6 @@ export default function Header() {
                     <span>Home</span>
                   </p>
                 </Link>
-              </li>
-              <li className="ml-3">
-                <div className="flex items-center">
-                  <ThemeSwitcher />
-                </div>
               </li>
             </ul>
           </nav>

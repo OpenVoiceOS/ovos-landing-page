@@ -36,7 +36,7 @@ export default function ContactUs() {
                 text: "GitHub",
               },
               {
-                href: "https://openvoiceos.github.io/ovos-technical-manual/",
+                href: "https://openvoiceos.github.io/beta-technical-manual/",
                 icon: faBook,
                 text: "Documentation",
               },

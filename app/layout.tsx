@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 
 import Header from "@/components/ui/header";
+import { ThemeSwitcher } from "@/components/ui/theme";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import { ThemeProvider as NextThemesProvider } from "next-themes";
@@ -37,11 +38,16 @@ export default function RootLayout({
           data-site-id="cd9f0c1ea196"
           strategy="afterInteractive"
         />
-        <NextThemesProvider attribute="class">
+        <NextThemesProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+        >
           <div className="flex flex-col min-h-screen overflow-hidden supports-[overflow:clip]:overflow-clip">
             <Header />
             {children}
           </div>
+          <ThemeSwitcher />
         </NextThemesProvider>
       </body>
     </html>

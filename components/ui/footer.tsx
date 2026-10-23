@@ -73,7 +73,7 @@ export default function Footer() {
             <ul className="space-y-2 text-gray-600 dark:text-gray-400">
               <li>
                 <Link
-                  href="https://openvoiceos.github.io/ovos-technical-manual"
+                  href="https://openvoiceos.github.io/beta-technical-manual"
                   className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                 >
                   Documentation
@@ -174,7 +174,7 @@ export default function Footer() {
                 <FontAwesomeIcon icon={faAt} className="w-6 h-6" />
               </a>
               <a
-                href="https://openvoiceos.github.io/ovos-technical-manual"
+                href="https://openvoiceos.github.io/beta-technical-manual"
                 className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
                 aria-label="Documentation"
               >

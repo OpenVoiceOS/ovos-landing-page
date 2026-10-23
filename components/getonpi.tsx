@@ -38,10 +38,10 @@ export default function Getonpi() {
                     specifically to embedded systems, low-spec headless devices,
                     and small touch-friendly screens.
                   </p>
-                  <div className="flex justify-center">
+                  <div className="flex justify-start">
                     <Link
                       href="/downloads"
-                      className="bg-black text-white font-bold py-2 px-4 rounded dark:bg-white dark:text-black"
+                      className="bg-black text-white font-bold py-2 px-4 rounded-3xl dark:bg-gray-800 dark:text-gray-200"
                     >
                       Download Now
                     </Link>

@@ -45,35 +45,36 @@ export default function DownloadPage() {
             >
               Downloads
             </h1>
-            <p
-              className="text-lg rounded-xl p-3 max-w-2xl mx-auto text-gray-600 mb-8 dark:text-gray-300"
-              data-aos="zoom-y-out"
-            >
-              Interested in building your own Voice Assistant? Check out{" "}
-              <Link
-                href="https://community.openconversational.ai/t/howto-begin-your-open-voice-os-journey-with-the-ovos-installer/14900"
-                className="text-blue-800"
-              >
-                this
-              </Link>{" "}
-              amazing guide to get started.
-            </p>
             <div
-              className="flex justify-center items-center"
+              className="bg-black dark:bg-gray-800 text-white rounded-xl p-8 max-w-2xl mx-auto mt-8 mb-4 shadow-lg"
               data-aos="zoom-y-out"
             >
-              <button
-                className="bg-black text-white font-bold py-2 px-4 rounded m-5 dark:bg-gray-800"
-                onClick={handleToggleDevices}
+              <h2 className="text-2xl font-bold mb-2">
+                Building your own Voice Assistant?
+              </h2>
+              <p className="text-lg text-gray-300 mb-6">
+                Our interactive installer is the easiest way to set up
+                OpenVoiceOS. Choose your device and voice options, prepare your
+                system, and follow the installation live.
+              </p>
+              <Link
+                href="https://start.openvoiceos.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white text-black font-bold py-3 px-6 rounded-3xl hover:bg-gray-200"
               >
-                Supported Devices
-              </button>
-              <button
-                className="bg-black text-white font-bold py-2 px-4 rounded m-5 dark:bg-gray-800"
-                onClick={handleTogglePeripherals}
-              >
-                Supported Peripherals
-              </button>
+                Launch Installer
+              </Link>
+              <p className="text-gray-400 mt-6">
+                New to OVOS? Read our{" "}
+                <Link
+                  href="https://community.openconversational.ai/t/howto-begin-your-open-voice-os-journey-with-the-ovos-installer/14900"
+                  className="text-white underline hover:no-underline"
+                >
+                  getting started guide
+                </Link>
+                .
+              </p>
             </div>
           </div>
         </div>
@@ -118,6 +119,20 @@ export default function DownloadPage() {
             </button>
           </div>
         </div>
+        <div className="flex justify-center items-center">
+          <button
+            className="bg-black text-white font-bold py-2 px-4 rounded-3xl m-5 dark:bg-gray-800 dark:text-gray-200"
+            onClick={handleToggleDevices}
+          >
+            Supported Devices
+          </button>
+          <button
+            className="bg-black text-white font-bold py-2 px-4 rounded-3xl m-5 dark:bg-gray-800 dark:text-gray-200"
+            onClick={handleTogglePeripherals}
+          >
+            Supported Peripherals
+          </button>
+        </div>
         <p
           className="text-lg rounded-xl p-3 max-w-2xl mx-auto text-gray-600 mb-8 dark:text-gray-300"
           data-aos="zoom-y-out"
@@ -148,7 +163,7 @@ export default function DownloadPage() {
         </p>
         <div className="flex justify-center items-center">
           <Link href="https://downloads.openvoiceos.org/images/">
-            <button className="bg-black text-white font-bold py-2 px-4 rounded m-5 dark:bg-gray-800">
+            <button className="bg-black text-white font-bold py-2 px-4 rounded-3xl m-5 dark:bg-gray-800 dark:text-gray-200">
               Development Releases
             </button>
           </Link>
@@ -175,7 +190,7 @@ export default function DownloadPage() {
               </li>
             </ul>
             <button
-              className="mt-4 bg-black text-white font-bold py-2 px-4 rounded"
+              className="mt-4 bg-black text-white font-bold py-2 px-4 rounded-3xl"
               onClick={handleCloseDevices}
             >
               Close
@@ -201,7 +216,7 @@ export default function DownloadPage() {
               <li>Google AIY-v1 / Chatterbox HAT</li>
             </ul>
             <button
-              className="mt-4 bg-black text-white font-bold py-2 px-4 rounded"
+              className="mt-4 bg-black text-white font-bold py-2 px-4 rounded-3xl"
               onClick={handleClosePeripherals}
             >
               Close
@@ -227,7 +242,7 @@ export default function DownloadPage() {
               .
             </p>
             <button
-              className="mt-4 bg-black text-white font-bold py-2 px-4 rounded"
+              className="mt-4 bg-black text-white font-bold py-2 px-4 rounded-3xl"
               onClick={handleCloseMycroft}
             >
               Close

@@ -114,7 +114,7 @@ const featuresData = [
         </g>
       </svg>
     ),
-    url: "https://openvoiceos.github.io/ovos-technical-manual/400-skill-design-guidelines/",
+    url: "https://openvoiceos.github.io/beta-technical-manual/skill-design-guidelines/",
   },
   {
     title: "Helping with Translation",
@@ -176,7 +176,7 @@ const featuresData = [
         </g>
       </svg>
     ),
-    url: "https://openvoiceos.github.io/ovos-technical-manual/",
+    url: "https://openvoiceos.github.io/beta-technical-manual/",
   },
   {
     title: "Sharing is Caring",

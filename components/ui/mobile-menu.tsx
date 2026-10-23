@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { Transition } from "@headlessui/react";
 import Link from "next/link";
-import { ThemeSwitcher } from "./theme";
+import ExternalArrow from "./external-arrow";
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false);
@@ -42,10 +42,9 @@ export default function MobileMenu() {
 
   return (
     <div className="flex md:hidden">
-      <ThemeSwitcher />
       <button
         ref={trigger}
-        className={`hamburger ml-5 ${mobileNavOpen && "active"}`}
+        className={`hamburger ${mobileNavOpen && "active"}`}
         aria-controls="mobile-nav"
         aria-expanded={mobileNavOpen}
         onClick={() => setMobileNavOpen(!mobileNavOpen)}
@@ -97,20 +96,28 @@ export default function MobileMenu() {
             </li>
             <li>
               <Link
-                href="https://openvoiceos.github.io/ovos-technical-manual"
-                className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center"
+                href="https://openvoiceos.github.io/beta-technical-manual"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center items-center"
                 onClick={() => setMobileNavOpen(false)}
               >
                 Documentation
+                <ExternalArrow />
+                <span className="sr-only"> (opens in new tab)</span>
               </Link>
             </li>
             <li>
               <Link
                 href="https://github.com/orgs/OpenVoiceOS/discussions"
-                className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center items-center"
                 onClick={() => setMobileNavOpen(false)}
               >
                 Discussion
+                <ExternalArrow />
+                <span className="sr-only"> (opens in new tab)</span>
               </Link>
             </li>
             <li>
@@ -134,10 +141,14 @@ export default function MobileMenu() {
             <li>
               <Link
                 href="https://blog.openvoiceos.org/"
-                className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex font-medium w-full text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white py-2 justify-center items-center"
                 onClick={() => setMobileNavOpen(false)}
               >
                 Blogs
+                <ExternalArrow />
+                <span className="sr-only"> (opens in new tab)</span>
               </Link>
             </li>
             <li>

@@ -1,27 +1,30 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { Transition } from "@headlessui/react";
-import Image from "next/image";
-import pythonLogo from "@/public/images/python.png";
-import dockerLogo from "@/public/images/docker.png";
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClone } from "@fortawesome/free-solid-svg-icons";
 
+const steps = [
+  {
+    title: "Choose your device",
+    description:
+      "Raspberry Pi, Mycroft® device, laptop or desktop: tell the installer what you're running on.",
+  },
+  {
+    title: "Pick your voice options",
+    description:
+      "Select the wake word, speech engines and features that fit your setup.",
+  },
+  {
+    title: "Install and follow along",
+    description:
+      "Prepare your system with clear steps and watch the installation progress live.",
+  },
+];
+
 export default function Gettingstarted() {
-  const [tab, setTab] = useState<number>(1);
-
-  const tabs = useRef<HTMLDivElement>(null);
-
   const [copied, setCopied] = useState(false);
-
-  const heightFix = () => {
-    if (tabs.current && tabs.current.parentElement)
-      tabs.current.parentElement.style.height = `${tabs.current.clientHeight}px`;
-  };
-  useEffect(() => {
-    heightFix();
-  }, []);
+  const [showTerminal, setShowTerminal] = useState(false);
 
   const handleCopy = () => {
     navigator.clipboard.writeText(
@@ -35,154 +38,80 @@ export default function Gettingstarted() {
     <section className="relative">
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
-          {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
-            {/* Content */}
-            <div
-              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6"
-              data-aos="fade-right"
-            >
-              <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3 text-gray-900 dark:text-white">
-                  Getting started{" "}
-                </h3>
-                <p className="text-xl text-gray-600 dark:text-gray-300">
-                  Installing OVOS couldn't be simpler! Just give our installer a
-                  try, and you're all set. We offer two main ways to install
-                  OVOS - Docker and Python.{" "}
-                </p>
-              </div>
-              {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? "bg-white dark:bg-gray-800 shadow-md border-gray-200 dark:border-gray-700 hover:shadow-lg" : "bg-gray-200 dark:bg-gray-700 border-transparent"}`}
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(1);
-                  }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1 text-gray-900 dark:text-white">
-                      Python Virtual Environment
-                    </div>
-                    <div className="text-gray-600 dark:text-gray-300">
-                      {" "}
-                      If you are a developer, and would like to fiddle with the
-                      code, this is the way to go.
-                    </div>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? "bg-white dark:bg-gray-800 shadow-md border-gray-200 dark:border-gray-700 hover:shadow-lg" : "bg-gray-200 dark:bg-gray-700 border-transparent"}`}
-                  href="#"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    setTab(2);
-                  }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1 text-gray-900 dark:text-white">
-                      Docker
-                    </div>
-                    <div className="text-gray-600 dark:text-gray-300">
-                      If you want a super stable and easy way to run OVOS,
-                      Docker is the way to go.
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
-            {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1">
-              <div className="transition-all">
-                <div
-                  className="relative flex flex-col text-center lg:text-right"
-                  data-aos="zoom-y-out"
-                  ref={tabs}
-                >
-                  {/* Item 1 */}
-                  <Transition
-                    as="div"
-                    show={tab === 1}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image
-                        className="md:max-w-none mx-auto rounded-full"
-                        src={pythonLogo}
-                        width={600}
-                        height={400}
-                        alt="Python Logo"
-                      />
-                    </div>
-                  </Transition>
-                  {/* Item 2 */}
-                  <Transition
-                    as="div"
-                    show={tab === 2}
-                    appear={true}
-                    className="w-full"
-                    enter="transition ease-in-out duration-700 transform order-first"
-                    enterFrom="opacity-0 translate-y-16"
-                    enterTo="opacity-100 translate-y-0"
-                    leave="transition ease-in-out duration-300 transform absolute"
-                    leaveFrom="opacity-100 translate-y-0"
-                    leaveTo="opacity-0 -translate-y-16"
-                    beforeEnter={() => heightFix()}
-                    unmount={false}
-                  >
-                    <div className="relative inline-flex flex-col">
-                      <Image
-                        className="md:max-w-none mx-auto rounded-full"
-                        src={dockerLogo}
-                        width={600}
-                        height={400}
-                        alt="Docker Logo"
-                      />
-                    </div>
-                  </Transition>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="text-center p-4 sm:p-6">
-            <p className="text-lg sm:text-xl text-gray-900 dark:text-white mb-4">
-              To get started, simply copy and paste the following command in
-              your terminal:
+          <div className="max-w-3xl mx-auto text-center pb-10 md:pb-12">
+            <h2 className="h2 mb-4 text-gray-800 dark:text-white">
+              Getting started
+            </h2>
+            <p className="text-xl text-gray-600 dark:text-gray-300">
+              Installing OVOS couldn't be simpler! Our interactive installer
+              guides you through every step, right from your browser.
             </p>
-            <code className="text-sm sm:text-base inline-flex flex-col sm:flex-row text-left items-center space-y-2 sm:space-y-0 sm:space-x-4 bg-black dark:bg-black text-white rounded-lg p-4">
-              <span className="flex items-center gap-2">
-                <span className="flex-1 break-words">
-                  <span>sh -c </span>
-                  <span className="text-gray-400 dark:text-gray-500 break-all">
-                    "curl -s
-                    https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/main/installer.sh
-                    -o installer.sh && chmod +x installer.sh && sudo
-                    ./installer.sh && rm installer.sh"
-                  </span>
-                </span>
-              </span>
-              <button
-                onClick={handleCopy}
-                className="text-white hover:text-white ml-auto sm:ml-8"
+          </div>
+          {/* Steps */}
+          <ol
+            className="max-w-sm mx-auto grid gap-8 md:max-w-none md:grid-cols-3 text-center"
+            data-aos="zoom-y-out"
+          >
+            {steps.map((step, index) => (
+              <li key={index}>
+                <div className="flex justify-center items-center w-10 h-10 mx-auto mb-4 rounded-full bg-black text-white dark:bg-white dark:text-black font-bold">
+                  {index + 1}
+                </div>
+                <h4 className="text-xl font-bold leading-snug tracking-tight mb-1 text-gray-900 dark:text-white">
+                  {step.title}
+                </h4>
+                <p className="text-gray-600 dark:text-gray-300">
+                  {step.description}
+                </p>
+              </li>
+            ))}
+          </ol>
+          {/* Actions */}
+          <div className="text-center pt-10 md:pt-12" data-aos="zoom-y-out">
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <a
+                href="https://start.openvoiceos.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn font-bold text-white bg-black dark:bg-white dark:text-black rounded-3xl"
               >
-                <FontAwesomeIcon icon={faClone} />
-                <span className="sr-only">Copy to clipboard</span>
+                Launch the Interactive Installer
+              </a>
+              <button
+                onClick={() => setShowTerminal(!showTerminal)}
+                aria-expanded={showTerminal}
+                className="btn font-bold text-gray-800 dark:text-gray-200 border border-gray-300 dark:border-gray-600 hover:border-gray-500 rounded-3xl"
+              >
+                {showTerminal ? "Hide terminal command" : "Install from terminal"}
               </button>
-              {copied && (
-                <span className="text-green-500 mt-2 sm:mt-0">^_^</span>
-              )}
-            </code>
+            </div>
+            {showTerminal && (
+              <div className="mt-6">
+                <code className="text-sm sm:text-base inline-flex flex-col sm:flex-row text-left items-center space-y-2 sm:space-y-0 sm:space-x-4 bg-black dark:bg-black text-white rounded-lg p-4">
+                  <span className="flex items-center gap-2">
+                    <span className="flex-1 break-words">
+                      <span>sh -c </span>
+                      <span className="text-gray-400 dark:text-gray-500 break-all">
+                        "curl -s
+                        https://raw.githubusercontent.com/OpenVoiceOS/ovos-installer/main/installer.sh
+                        -o installer.sh && chmod +x installer.sh && sudo
+                        ./installer.sh && rm installer.sh"
+                      </span>
+                    </span>
+                  </span>
+                  <button
+                    onClick={handleCopy}
+                    className="text-white hover:text-white ml-auto sm:ml-8"
+                  >
+                    <FontAwesomeIcon icon={faClone} />
+                    <span className="sr-only">Copy to clipboard</span>
+                  </button>
+                  {copied && (
+                    <span className="text-green-500 mt-2 sm:mt-0">^_^</span>
+                  )}
+                </code>
+              </div>
+            )}
           </div>
         </div>
       </div>
